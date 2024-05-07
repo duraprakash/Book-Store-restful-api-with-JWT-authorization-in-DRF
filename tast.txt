@@ -1,0 +1,19 @@
+user 
+    admin
+    seller
+    buyer
+->group ->permission
+
+books
+    seller -> CRUD
+    buyer -> R
+
+filter
+    books category
+    publications
+    published date
+    price 
+
+book -> rent/buy
+rent -> date return date ? fine 
+
