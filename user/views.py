@@ -11,6 +11,9 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework_simplejwt.views import TokenObtainPairView
+from rest_framework.permissions import IsAuthenticated
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 # Create your views here.
 def get_tokens_for_user(user):
@@ -40,6 +43,8 @@ class Seller(ListAPIView):
         return User.objects.filter(seller=True)
     
 class UserListView(ListAPIView):
+    permission_classes = (IsAuthenticated,)
+    authentication_classes = (JWTAuthentication,)
     queryset = User.objects.all()
     serializer_class = UserListSerializer
 
@@ -69,6 +74,8 @@ class UserDeleteView(DestroyAPIView):
     
 
 class LogoutView(APIView):
+    permission_classes = (IsAuthenticated,)
+    authentication_classes = (JWTAuthentication,)
     def post(self, request):
         refresh_token = request.data.get('refresh_token')
 
@@ -83,7 +90,7 @@ class LogoutView(APIView):
 
         return Response({'success': 'Successfully logged out.'}, status=status.HTTP_200_OK)
     
-class LoginView(APIView):
+class LoginView(TokenObtainPairView):
     serializers_class = LoginSerializer
     def post(self, request):
         serializer = LoginSerializer(data=request.data)

@@ -284,6 +284,30 @@
         "documentation": {}
     },
     {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthentication",
+        "importPath": "rest_framework_simplejwt.authentication",
+        "description": "rest_framework_simplejwt.authentication",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.authentication",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -594,7 +618,7 @@
         "kind": 6,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "class Seller(ListAPIView):\n    serializer_class = UserListSerializer\n    def get_queryset(self):\n        return User.objects.filter(seller=True)\nclass UserListView(ListAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\nclass UserRetrieveView(RetrieveAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer",
+        "peekOfCode": "class Seller(ListAPIView):\n    serializer_class = UserListSerializer\n    def get_queryset(self):\n        return User.objects.filter(seller=True)\nclass UserListView(ListAPIView):\n    permission_classes = (IsAuthenticated,)\n    authentication_classes = (JWTAuthentication,)\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\nclass UserRetrieveView(RetrieveAPIView):",
         "detail": "user.views",
         "documentation": {}
     },
@@ -603,7 +627,7 @@
         "kind": 6,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "class UserListView(ListAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\nclass UserRetrieveView(RetrieveAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\nclass UserUpdateView(UpdateAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\n    def update(self, request, *args, **kwargs):",
+        "peekOfCode": "class UserListView(ListAPIView):\n    permission_classes = (IsAuthenticated,)\n    authentication_classes = (JWTAuthentication,)\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\nclass UserRetrieveView(RetrieveAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\nclass UserUpdateView(UpdateAPIView):\n    queryset = User.objects.all()",
         "detail": "user.views",
         "documentation": {}
     },
@@ -630,7 +654,7 @@
         "kind": 6,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "class UserDeleteView(DestroyAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\nclass LogoutView(APIView):\n    def post(self, request):\n        refresh_token = request.data.get('refresh_token')\n        if not refresh_token:\n            return Response({'error': 'Refresh token is required.'}, status=status.HTTP_400_BAD_REQUEST)\n        try:\n            token = RefreshToken(refresh_token)",
+        "peekOfCode": "class UserDeleteView(DestroyAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserListSerializer\nclass LogoutView(APIView):\n    permission_classes = (IsAuthenticated,)\n    authentication_classes = (JWTAuthentication,)\n    def post(self, request):\n        refresh_token = request.data.get('refresh_token')\n        if not refresh_token:\n            return Response({'error': 'Refresh token is required.'}, status=status.HTTP_400_BAD_REQUEST)",
         "detail": "user.views",
         "documentation": {}
     },
@@ -639,7 +663,7 @@
         "kind": 6,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "class LogoutView(APIView):\n    def post(self, request):\n        refresh_token = request.data.get('refresh_token')\n        if not refresh_token:\n            return Response({'error': 'Refresh token is required.'}, status=status.HTTP_400_BAD_REQUEST)\n        try:\n            token = RefreshToken(refresh_token)\n            token.blacklist()\n        except Exception as e:\n            return Response({'error': 'Invalid refresh token.'}, status=status.HTTP_400_BAD_REQUEST)",
+        "peekOfCode": "class LogoutView(APIView):\n    permission_classes = (IsAuthenticated,)\n    authentication_classes = (JWTAuthentication,)\n    def post(self, request):\n        refresh_token = request.data.get('refresh_token')\n        if not refresh_token:\n            return Response({'error': 'Refresh token is required.'}, status=status.HTTP_400_BAD_REQUEST)\n        try:\n            token = RefreshToken(refresh_token)\n            token.blacklist()",
         "detail": "user.views",
         "documentation": {}
     },
@@ -648,7 +672,7 @@
         "kind": 6,
         "importPath": "user.views",
         "description": "user.views",
-        "peekOfCode": "class LoginView(APIView):\n    serializers_class = LoginSerializer\n    def post(self, request):\n        serializer = LoginSerializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        user = serializer.validated_data['user']\n        refresh = RefreshToken.for_user(user)\n        return Response({\n            'refresh': str(refresh),\n            'access': str(refresh.access_token),",
+        "peekOfCode": "class LoginView(TokenObtainPairView):\n    serializers_class = LoginSerializer\n    def post(self, request):\n        serializer = LoginSerializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        user = serializer.validated_data['user']\n        refresh = RefreshToken.for_user(user)\n        return Response({\n            'refresh': str(refresh),\n            'access': str(refresh.access_token),",
         "detail": "user.views",
         "documentation": {}
     },
