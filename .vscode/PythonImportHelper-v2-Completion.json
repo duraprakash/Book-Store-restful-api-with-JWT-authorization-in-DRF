@@ -188,16 +188,15 @@
         "documentation": {}
     },
     {
-        "label": "rest_framework",
-        "kind": 6,
-        "isExtraImport": true,
+        "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
+        "isExtraImport": true,
         "detail": "rest_framework",
         "documentation": {}
     },
     {
-        "label": "serializers",
+        "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -334,7 +333,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework', # auth 1.4",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -343,7 +342,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'rest_framework.authtoken',\n    'rest_framework_simplejwt',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework', # auth 1.4\n    'rest_framework.authtoken', # auth 1.3\n    'rest_framework_simplejwt', # jwt 1.4",
         "detail": "config.settings",
         "documentation": {}
     },
