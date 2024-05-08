@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt', # jwt 1.4
     'rest_framework_simplejwt.token_blacklist', # jwt 1.5
     'user', # auth 1.2
+    'book',
 ]
 
 MIDDLEWARE = [
@@ -180,3 +181,8 @@ REST_FRAMEWORK = {
 
 # auth 1.1
 AUTH_USER_MODEL = 'user.User'
+
+# pillow 1.1
+import os
+MEDIA_URL = '/media/'
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')

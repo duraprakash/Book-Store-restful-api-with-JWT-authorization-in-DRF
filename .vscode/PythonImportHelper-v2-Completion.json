@@ -1,5 +1,334 @@
 [
     {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "ListAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "CreateAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "DestroyAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "ListAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "CreateAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "DestroyAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -30,54 +359,6 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -132,91 +413,11 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
         "label": "authenticate",
         "importPath": "django.contrib.auth",
         "description": "django.contrib.auth",
         "isExtraImport": true,
         "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -260,59 +461,11 @@
         "documentation": {}
     },
     {
-        "label": "ListAPIView",
-        "importPath": "rest_framework.generics",
-        "description": "rest_framework.generics",
-        "isExtraImport": true,
-        "detail": "rest_framework.generics",
-        "documentation": {}
-    },
-    {
-        "label": "CreateAPIView",
-        "importPath": "rest_framework.generics",
-        "description": "rest_framework.generics",
-        "isExtraImport": true,
-        "detail": "rest_framework.generics",
-        "documentation": {}
-    },
-    {
-        "label": "RetrieveAPIView",
-        "importPath": "rest_framework.generics",
-        "description": "rest_framework.generics",
-        "isExtraImport": true,
-        "detail": "rest_framework.generics",
-        "documentation": {}
-    },
-    {
-        "label": "UpdateAPIView",
-        "importPath": "rest_framework.generics",
-        "description": "rest_framework.generics",
-        "isExtraImport": true,
-        "detail": "rest_framework.generics",
-        "documentation": {}
-    },
-    {
-        "label": "DestroyAPIView",
-        "importPath": "rest_framework.generics",
-        "description": "rest_framework.generics",
-        "isExtraImport": true,
-        "detail": "rest_framework.generics",
-        "documentation": {}
-    },
-    {
         "label": "RefreshToken",
         "importPath": "rest_framework_simplejwt.tokens",
         "description": "rest_framework_simplejwt.tokens",
         "isExtraImport": true,
         "detail": "rest_framework_simplejwt.tokens",
-        "documentation": {}
-    },
-    {
-        "label": "Response",
-        "importPath": "rest_framework.response",
-        "description": "rest_framework.response",
-        "isExtraImport": true,
-        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
@@ -346,6 +499,321 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "book.migrations.0001_initial",
+        "description": "book.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Author',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "book.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "BookConfig",
+        "kind": 6,
+        "importPath": "book.apps",
+        "description": "book.apps",
+        "peekOfCode": "class BookConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'book'",
+        "detail": "book.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "book.models",
+        "description": "book.models",
+        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=50)\n    def __str__(self):\n        return self.name\nclass SubCategory(models.Model):\n    category = models.ForeignKey(Category, verbose_name=(\"Category\"), on_delete=models.CASCADE)\n    name = models.CharField(max_length=50)\n    def __str__(self):\n        return self.name\nclass Author(models.Model):",
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "SubCategory",
+        "kind": 6,
+        "importPath": "book.models",
+        "description": "book.models",
+        "peekOfCode": "class SubCategory(models.Model):\n    category = models.ForeignKey(Category, verbose_name=(\"Category\"), on_delete=models.CASCADE)\n    name = models.CharField(max_length=50)\n    def __str__(self):\n        return self.name\nclass Author(models.Model):\n    GENDER_CHOICES = [\n        ('male','Male'),\n        ('female','Female'),\n        ('other','Other'),",
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "kind": 6,
+        "importPath": "book.models",
+        "description": "book.models",
+        "peekOfCode": "class Author(models.Model):\n    GENDER_CHOICES = [\n        ('male','Male'),\n        ('female','Female'),\n        ('other','Other'),\n    ]\n    name = models.CharField(max_length=50)\n    dob = models.DateField(null=True,blank=True)\n    nationality = models.CharField(max_length=50)\n    gender = models.CharField(max_length=10, choices=GENDER_CHOICES)",
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "book.models",
+        "description": "book.models",
+        "peekOfCode": "class Book(models.Model):\n    title = models.CharField(max_length=50, blank=False)\n    image = models.ImageField(upload_to='media')\n    isnb = models.CharField(max_length=50)\n    category = models.ForeignKey(Category, verbose_name=(\"Category\"), on_delete=models.CASCADE)\n    sub_category = models.ForeignKey(SubCategory, verbose_name=(\"Sub Category\"), on_delete=models.CASCADE)\n    author = models.ManyToManyField(Author, verbose_name=(\"Author\"))\n    price = models.DecimalField(max_digits=5, decimal_places=2)\n    publication = models.CharField(max_length=50)\n    publication_date = models.DateField()",
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "CategorySerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class CategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Category\n        fields = '__all__'\nclass SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SubCategorySerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'\n# create override serializers\nclass CategoryCreateSerializer(serializers.ModelSerializer):",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'\n# create override serializers\nclass CategoryCreateSerializer(serializers.ModelSerializer):\n    category = serializers.StringRelatedField()\n    athor = serializers.StringRelatedField(many=True)\n    class Meta:\n        model = Category",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryCreateSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class CategoryCreateSerializer(serializers.ModelSerializer):\n    category = serializers.StringRelatedField()\n    athor = serializers.StringRelatedField(many=True)\n    class Meta:\n        model = Category\n        fields = '__all__'\n    # def create(self, validated_data):\n    #     name= validated_data.get('name',None)\n    #     user=Category.objects.create(\n    #         name=name,",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SubCategoryCreateSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class SubCategoryCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookCreateSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorCreateSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class AuthorCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookCreateSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class BookCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "book.urls",
+        "description": "book.urls",
+        "peekOfCode": "urlpatterns = [\n    # path('', ),\n    # Category\n    path('categories/', CategoryListView.as_view(), name='categories'),\n    path('category/create/', CategoryCreateView.as_view(), name='category_create'),\n    path('category/<int:pk>/', CategoryRetrieveView.as_view(), name='category_retrieve'),\n    path('category/<int:pk>/update/', CategoryUpdateView.as_view(), name='category_update'),\n    path('category/<int:pk>/delete/', CategoryDeleteView.as_view(), name='category_delete'),\n    # Sub-Category\n    path('subcategories/', SubCategoryListView.as_view(), name='subcategories'),",
+        "detail": "book.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryListView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CategoryListView(ListAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryCreateView(CreateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryUpdateView(UpdateAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryCreateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CategoryCreateView(CreateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryDeleteView(DestroyAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryRetrieveView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    def destroy(self, request, *args, **kwargs):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryUpdateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryDeleteView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)\n# Sub-Category\nclass SubCategoryListView(ListAPIView):\n    queryset = SubCategory.objects.all()",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "SubCategoryListView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class SubCategoryListView(ListAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryCreateView(CreateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryUpdateView(UpdateAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "SubCategoryCreateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class SubCategoryCreateView(CreateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryDeleteView(DestroyAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "SubCategoryRetrieveView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer   \n    def destroy(self, request, *args, **kwargs):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "SubCategoryUpdateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer   \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Sub category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) ",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "SubCategoryDeleteView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer   \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Sub category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) \n# Author\nclass AuthorListView(ListAPIView):\n    queryset = Author.objects.all()",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorListView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class AuthorListView(ListAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorCreateView(CreateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorUpdateView(UpdateAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorCreateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class AuthorCreateView(CreateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorDeleteView(DestroyAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorRetrieveView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer   \n    def destroy(self, request, *args, **kwargs):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorUpdateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer   \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Author deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) ",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorDeleteView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer   \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Author deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) \n# Book\nclass BookListView(ListAPIView):\n    queryset = Book.objects.all()",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "BookListView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class BookListView(ListAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookUpdateView(UpdateAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "BookCreateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookDeleteView(DestroyAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "BookRetrieveView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer    \n    def destroy(self, request, *args, **kwargs):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "BookUpdateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer    \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Book deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "BookDeleteView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer    \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Book deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)",
+        "detail": "book.views",
         "documentation": {}
     },
     {
@@ -524,7 +992,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    )\n}\n# auth 1.1\nAUTH_USER_MODEL = 'user.User'",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    )\n}\n# auth 1.1\nAUTH_USER_MODEL = 'user.User'\n# pillow 1.1\nimport os\nMEDIA_URL = '/media/'",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -533,7 +1001,25 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "AUTH_USER_MODEL = 'user.User'",
+        "peekOfCode": "AUTH_USER_MODEL = 'user.User'\n# pillow 1.1\nimport os\nMEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR, 'media')",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR, 'media')",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -542,7 +1028,7 @@
         "kind": 5,
         "importPath": "config.urls",
         "description": "config.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('users/', include('user.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('users/', include('user.urls')),\n    path('books/', include('book.urls')),\n]",
         "detail": "config.urls",
         "documentation": {}
     },
