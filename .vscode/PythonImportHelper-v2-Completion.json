@@ -578,7 +578,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'\n# create override serializers\nclass CategoryCreateSerializer(serializers.ModelSerializer):",
+        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -587,43 +587,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'\n# create override serializers\nclass CategoryCreateSerializer(serializers.ModelSerializer):\n    category = serializers.StringRelatedField()\n    athor = serializers.StringRelatedField(many=True)\n    class Meta:\n        model = Category",
-        "detail": "book.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "CategoryCreateSerializer",
-        "kind": 6,
-        "importPath": "book.serializers",
-        "description": "book.serializers",
-        "peekOfCode": "class CategoryCreateSerializer(serializers.ModelSerializer):\n    category = serializers.StringRelatedField()\n    athor = serializers.StringRelatedField(many=True)\n    class Meta:\n        model = Category\n        fields = '__all__'\n    # def create(self, validated_data):\n    #     name= validated_data.get('name',None)\n    #     user=Category.objects.create(\n    #         name=name,",
-        "detail": "book.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "SubCategoryCreateSerializer",
-        "kind": 6,
-        "importPath": "book.serializers",
-        "description": "book.serializers",
-        "peekOfCode": "class SubCategoryCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookCreateSerializer(serializers.ModelSerializer):\n    class Meta:",
-        "detail": "book.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "AuthorCreateSerializer",
-        "kind": 6,
-        "importPath": "book.serializers",
-        "description": "book.serializers",
-        "peekOfCode": "class AuthorCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'",
-        "detail": "book.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "BookCreateSerializer",
-        "kind": 6,
-        "importPath": "book.serializers",
-        "description": "book.serializers",
-        "peekOfCode": "class BookCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'",
+        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'",
         "detail": "book.serializers",
         "documentation": {}
     },
