@@ -220,6 +220,46 @@
         "documentation": {}
     },
     {
+        "label": "TokenObtainSlidingView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshSlidingView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenVerifyView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenBlacklistView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
         "label": "ListAPIView",
         "importPath": "rest_framework.generics",
         "description": "rest_framework.generics",
@@ -281,14 +321,6 @@
         "description": "rest_framework.views",
         "isExtraImport": true,
         "detail": "rest_framework.views",
-        "documentation": {}
-    },
-    {
-        "label": "TokenObtainPairView",
-        "importPath": "rest_framework_simplejwt.views",
-        "description": "rest_framework_simplejwt.views",
-        "isExtraImport": true,
-        "detail": "rest_framework_simplejwt.views",
         "documentation": {}
     },
     {
@@ -600,7 +632,7 @@
         "kind": 5,
         "importPath": "user.urls",
         "description": "user.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', UserListView.as_view(), name='users'),\n    path('create/', UserCreateView.as_view(), name='user-create'),\n    path('<int:pk>/', UserRetrieveView.as_view(), name='user-retrieve'),\n    path('<int:pk>/update/', UserUpdateView.as_view(), name='user-update'),\n    path('<int:pk>/delete/', UserDeleteView.as_view(), name='user-delete'),\n    path('login/', LoginView.as_view(), name='login'),\n    path('logout/', LogoutView.as_view(), name='logout'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', UserListView.as_view(), name='users'),\n    path('create/', UserCreateView.as_view(), name='user-create'),\n    path('<int:pk>/', UserRetrieveView.as_view(), name='user-retrieve'),\n    path('<int:pk>/update/', UserUpdateView.as_view(), name='user-update'),\n    path('<int:pk>/delete/', UserDeleteView.as_view(), name='user-delete'),\n    path('login/', LoginView.as_view(), name='login'),\n    path('logout/', LogoutView.as_view(), name='logout'),\n    path('api/token/', TokenObtainSlidingView.as_view(), name='token_obtain'),\n    path('api/token/refresh/', TokenRefreshSlidingView.as_view(), name='token_refresh'),",
         "detail": "user.urls",
         "documentation": {}
     },
