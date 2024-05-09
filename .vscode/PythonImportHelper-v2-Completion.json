@@ -370,6 +370,14 @@
         "documentation": {}
     },
     {
+        "label": "Env",
+        "importPath": "environs",
+        "description": "environs",
+        "isExtraImport": true,
+        "detail": "environs",
+        "documentation": {}
+    },
+    {
         "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
@@ -828,7 +836,16 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-_r&ii526mx%=hd(55jcgc#$k!1vu&$#8fpmc*_=d6hl7#v$81n'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# env 1.2\nenv = Env()\nenv.read_env(os.path.join(BASE_DIR,'.env'))\n# SECURITY WARNING: keep the secret key used in production secret!\n# SECRET_KEY = 'django-insecure-_r&ii526mx%=hd(55jcgc#$k!1vu&$#8fpmc*_=d6hl7#v$81n'\n# env 1.3\nSECRET_KEY = env(\"SECRETE\")",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "env",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "env = Env()\nenv.read_env(os.path.join(BASE_DIR,'.env'))\n# SECURITY WARNING: keep the secret key used in production secret!\n# SECRET_KEY = 'django-insecure-_r&ii526mx%=hd(55jcgc#$k!1vu&$#8fpmc*_=d6hl7#v$81n'\n# env 1.3\nSECRET_KEY = env(\"SECRETE\")\nKHALTI_SECRETE_KEY = env(\"KHALTI_SECRETE_KEY\")\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -837,7 +854,16 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-_r&ii526mx%=hd(55jcgc#$k!1vu&$#8fpmc*_=d6hl7#v$81n'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = env(\"SECRETE\")\nKHALTI_SECRETE_KEY = env(\"KHALTI_SECRETE_KEY\")\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "KHALTI_SECRETE_KEY",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "KHALTI_SECRETE_KEY = env(\"KHALTI_SECRETE_KEY\")\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -990,7 +1016,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    )\n}\n# auth 1.1\nAUTH_USER_MODEL = 'user.User'\n# pillow 1.1\nimport os\nMEDIA_URL = '/media/'",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    )\n}\n# auth 1.1\nAUTH_USER_MODEL = 'user.User'\n# pillow 1.1\nMEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR, 'media')",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -999,7 +1025,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "AUTH_USER_MODEL = 'user.User'\n# pillow 1.1\nimport os\nMEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR, 'media')",
+        "peekOfCode": "AUTH_USER_MODEL = 'user.User'\n# pillow 1.1\nMEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR, 'media')",
         "detail": "config.settings",
         "documentation": {}
     },

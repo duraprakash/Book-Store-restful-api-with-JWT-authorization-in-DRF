@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+# env 1.1
+from environs import Env
+import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -19,8 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
+# env 1.2
+env = Env()
+env.read_env(os.path.join(BASE_DIR,'.env'))
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_r&ii526mx%=hd(55jcgc#$k!1vu&$#8fpmc*_=d6hl7#v$81n'
+# SECRET_KEY = 'django-insecure-_r&ii526mx%=hd(55jcgc#$k!1vu&$#8fpmc*_=d6hl7#v$81n'
+# env 1.3
+SECRET_KEY = env("SECRETE")
+
+KHALTI_SECRETE_KEY = env("KHALTI_SECRETE_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -183,6 +195,5 @@ REST_FRAMEWORK = {
 AUTH_USER_MODEL = 'user.User'
 
 # pillow 1.1
-import os
 MEDIA_URL = '/media/'
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
