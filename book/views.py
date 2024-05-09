@@ -24,14 +24,17 @@ class CategoryCreateView(CreateAPIView):
 class CategoryRetrieveView(RetrieveAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+    lookup_field = 'pk'
     
 class CategoryUpdateView(UpdateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+    lookup_field = 'pk'
     
 class CategoryDeleteView(DestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+    lookup_field = 'pk'
     
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -50,14 +53,17 @@ class SubCategoryCreateView(CreateAPIView):
 class SubCategoryRetrieveView(RetrieveAPIView):
     queryset = SubCategory.objects.all()
     serializer_class = SubCategorySerializer
+    lookup_field = 'pk'
     
 class SubCategoryUpdateView(UpdateAPIView):
     queryset = SubCategory.objects.all()
     serializer_class = SubCategorySerializer
+    lookup_field = 'pk'
     
 class SubCategoryDeleteView(DestroyAPIView):
     queryset = SubCategory.objects.all()
-    serializer_class = SubCategorySerializer   
+    serializer_class = SubCategorySerializer
+    lookup_field = 'pk' 
     
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -76,14 +82,17 @@ class AuthorCreateView(CreateAPIView):
 class AuthorRetrieveView(RetrieveAPIView):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
+    lookup_field = 'pk'
     
 class AuthorUpdateView(UpdateAPIView):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
+    lookup_field = 'pk'
     
 class AuthorDeleteView(DestroyAPIView):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer   
+    lookup_field = 'pk'
     
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -102,14 +111,17 @@ class BookCreateView(CreateAPIView):
 class BookRetrieveView(RetrieveAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    lookup_field = 'pk'
     
 class BookUpdateView(UpdateAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    lookup_field = 'pk'
     
 class BookDeleteView(DestroyAPIView):
     queryset = Book.objects.all()
-    serializer_class = BookSerializer    
+    serializer_class = BookSerializer  
+    lookup_field = 'pk'  
     
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()

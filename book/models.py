@@ -26,6 +26,9 @@ class Author(models.Model):
     nationality = models.CharField(max_length=50)
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES)
     
+    def __str__(self):
+        return self.name
+    
 class Book(models.Model):
     title = models.CharField(max_length=50, blank=False)
     image = models.ImageField(upload_to='media')
@@ -36,9 +39,15 @@ class Book(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)
     publication = models.CharField(max_length=50)
     publication_date = models.DateField()
+    slug = models.SlugField(default="", null=False)
     is_available = models.BooleanField(default=False)
     added_by = models.OneToOneField(User, verbose_name=("Added By"), on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    
+    def __str__(self):
+        return self.slug
+
+    
     
     

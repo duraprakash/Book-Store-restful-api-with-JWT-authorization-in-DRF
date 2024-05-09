@@ -41,6 +41,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -511,6 +527,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "book.migrations.0002_book_slug",
+        "description": "book.migrations.0002_book_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0001_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='book',\n            name='slug',\n            field=models.SlugField(default=''),\n        ),",
+        "detail": "book.migrations.0002_book_slug",
+        "documentation": {}
+    },
+    {
+        "label": "slug",
+        "kind": 6,
+        "importPath": "book.admin",
+        "description": "book.admin",
+        "peekOfCode": "class slug(admin.ModelAdmin):\n    list_display = (\"title\", \"added_by\",)\n    prepopulated_fields = {\"slug\": (\"title\", \"added_by\")}\nadmin.site.register(Book, slug)",
+        "detail": "book.admin",
+        "documentation": {}
+    },
+    {
         "label": "BookConfig",
         "kind": 6,
         "importPath": "book.apps",
@@ -605,7 +639,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class CategoryListView(ListAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryCreateView(CreateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryUpdateView(UpdateAPIView):",
+        "peekOfCode": "class CategoryListView(ListAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryCreateView(CreateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    lookup_field = 'pk'",
         "detail": "book.views",
         "documentation": {}
     },
@@ -614,7 +648,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class CategoryCreateView(CreateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryDeleteView(DestroyAPIView):",
+        "peekOfCode": "class CategoryCreateView(CreateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    lookup_field = 'pk'\nclass CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer",
         "detail": "book.views",
         "documentation": {}
     },
@@ -623,7 +657,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    def destroy(self, request, *args, **kwargs):",
+        "peekOfCode": "class CategoryRetrieveView(RetrieveAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    lookup_field = 'pk'\nclass CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    lookup_field = 'pk'\nclass CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -632,7 +666,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\nclass CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)",
+        "peekOfCode": "class CategoryUpdateView(UpdateAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    lookup_field = 'pk'\nclass CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    lookup_field = 'pk'\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -641,7 +675,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)\n# Sub-Category\nclass SubCategoryListView(ListAPIView):\n    queryset = SubCategory.objects.all()",
+        "peekOfCode": "class CategoryDeleteView(DestroyAPIView):\n    queryset = Category.objects.all()\n    serializer_class = CategorySerializer\n    lookup_field = 'pk'\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)\n# Sub-Category\nclass SubCategoryListView(ListAPIView):",
         "detail": "book.views",
         "documentation": {}
     },
@@ -650,7 +684,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class SubCategoryListView(ListAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryCreateView(CreateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryUpdateView(UpdateAPIView):",
+        "peekOfCode": "class SubCategoryListView(ListAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryCreateView(CreateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\n    lookup_field = 'pk'",
         "detail": "book.views",
         "documentation": {}
     },
@@ -659,7 +693,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class SubCategoryCreateView(CreateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryDeleteView(DestroyAPIView):",
+        "peekOfCode": "class SubCategoryCreateView(CreateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\n    lookup_field = 'pk'\nclass SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer",
         "detail": "book.views",
         "documentation": {}
     },
@@ -668,7 +702,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer   \n    def destroy(self, request, *args, **kwargs):",
+        "peekOfCode": "class SubCategoryRetrieveView(RetrieveAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\n    lookup_field = 'pk'\nclass SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\n    lookup_field = 'pk'\nclass SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -677,7 +711,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\nclass SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer   \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Sub category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) ",
+        "peekOfCode": "class SubCategoryUpdateView(UpdateAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\n    lookup_field = 'pk'\nclass SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\n    lookup_field = 'pk' \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -686,7 +720,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer   \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Sub category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) \n# Author\nclass AuthorListView(ListAPIView):\n    queryset = Author.objects.all()",
+        "peekOfCode": "class SubCategoryDeleteView(DestroyAPIView):\n    queryset = SubCategory.objects.all()\n    serializer_class = SubCategorySerializer\n    lookup_field = 'pk' \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Sub category deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) \n# Author\nclass AuthorListView(ListAPIView):",
         "detail": "book.views",
         "documentation": {}
     },
@@ -695,7 +729,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class AuthorListView(ListAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorCreateView(CreateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorUpdateView(UpdateAPIView):",
+        "peekOfCode": "class AuthorListView(ListAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorCreateView(CreateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\n    lookup_field = 'pk'",
         "detail": "book.views",
         "documentation": {}
     },
@@ -704,7 +738,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class AuthorCreateView(CreateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorDeleteView(DestroyAPIView):",
+        "peekOfCode": "class AuthorCreateView(CreateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\n    lookup_field = 'pk'\nclass AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer",
         "detail": "book.views",
         "documentation": {}
     },
@@ -713,7 +747,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer   \n    def destroy(self, request, *args, **kwargs):",
+        "peekOfCode": "class AuthorRetrieveView(RetrieveAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\n    lookup_field = 'pk'\nclass AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\n    lookup_field = 'pk'\nclass AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -722,7 +756,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\nclass AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer   \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Author deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) ",
+        "peekOfCode": "class AuthorUpdateView(UpdateAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer\n    lookup_field = 'pk'\nclass AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer   \n    lookup_field = 'pk'\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -731,7 +765,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer   \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Author deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) \n# Book\nclass BookListView(ListAPIView):\n    queryset = Book.objects.all()",
+        "peekOfCode": "class AuthorDeleteView(DestroyAPIView):\n    queryset = Author.objects.all()\n    serializer_class = AuthorSerializer   \n    lookup_field = 'pk'\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Author deleted successfully\"}, status=status.HTTP_204_NO_CONTENT) \n# Book\nclass BookListView(ListAPIView):",
         "detail": "book.views",
         "documentation": {}
     },
@@ -740,7 +774,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookListView(ListAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookUpdateView(UpdateAPIView):",
+        "peekOfCode": "class BookListView(ListAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'",
         "detail": "book.views",
         "documentation": {}
     },
@@ -749,7 +783,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookDeleteView(DestroyAPIView):",
+        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer",
         "detail": "book.views",
         "documentation": {}
     },
@@ -758,7 +792,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer    \n    def destroy(self, request, *args, **kwargs):",
+        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -767,7 +801,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer    \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Book deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)",
+        "peekOfCode": "class BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer  \n    lookup_field = 'pk'  \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -776,7 +810,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer    \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Book deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)",
+        "peekOfCode": "class BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer  \n    lookup_field = 'pk'  \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Book deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)",
         "detail": "book.views",
         "documentation": {}
     },
