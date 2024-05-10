@@ -1,12 +1,24 @@
 from rest_framework import serializers
-from .models import Address, User
+from .models import Address, Geo, User
 from django.contrib.auth.models import Group
 from django.contrib.auth import authenticate
 
+class GeoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Geo
+        fields = '__all__'
+        
 class AddressSerializer(serializers.ModelSerializer):
+    # geo = GeoSerializer()
     class Meta:
         model = Address
         fields = '__all__'
+    
+    # def create(self, validated_data):
+    #     geo_data = validated_data.pop('geo') # remove from dic
+    #     geo = Geo.objects.create(**geo_data) # transform into dic
+    #     address = Address.objects.create(geo=geo, **validated_data) # insert
+    #     return address
         
 class UserSerializer(serializers.ModelSerializer):
     address = AddressSerializer()
@@ -21,7 +33,10 @@ class UserSerializer(serializers.ModelSerializer):
 
         
     def create(self, validated_data):
+        # remove from dic
         address_data = validated_data.pop('address')
+        
+        # transform into dic
         address = Address.objects.create(**address_data)
         
         user = User.objects.create_user(**validated_data)

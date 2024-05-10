@@ -209,6 +209,30 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1332,6 +1356,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "user.migrations.0006_geo_address_geo",
+        "description": "user.migrations.0006_geo_address_geo",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0005_alter_address_country'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Geo',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('lat', models.DecimalField(decimal_places=6, max_digits=9)),",
+        "detail": "user.migrations.0006_geo_address_geo",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "user.migrations.0007_remove_address_geo",
+        "description": "user.migrations.0007_remove_address_geo",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0006_geo_address_geo'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='address',\n            name='geo',\n        ),\n    ]",
+        "detail": "user.migrations.0007_remove_address_geo",
+        "documentation": {}
+    },
+    {
         "label": "UserConfig",
         "kind": 6,
         "importPath": "user.apps",
@@ -1341,11 +1383,20 @@
         "documentation": {}
     },
     {
+        "label": "Geo",
+        "kind": 6,
+        "importPath": "user.models",
+        "description": "user.models",
+        "peekOfCode": "class Geo(models.Model):\n    lat = models.DecimalField(max_digits=9, decimal_places=6)\n    lng = models.DecimalField(max_digits=9, decimal_places=6)\nclass Address(models.Model):\n    street = models.CharField(max_length=255)\n    city = models.CharField(max_length=255)\n    state = models.CharField(max_length=255)\n    country = models.CharField(max_length=255)\n    # geo = models.ForeignKey(Geo, verbose_name=_(\"Geo\"), on_delete=models.SET_NULL, null=True)\nclass User(AbstractUser):",
+        "detail": "user.models",
+        "documentation": {}
+    },
+    {
         "label": "Address",
         "kind": 6,
         "importPath": "user.models",
         "description": "user.models",
-        "peekOfCode": "class Address(models.Model):\n    street = models.CharField(max_length=255)\n    city = models.CharField(max_length=255)\n    state = models.CharField(max_length=255)\n    country = models.CharField(max_length=255)\nclass User(AbstractUser):\n    # first_name = models.CharField(max_length=50)\n    updated_at = models.DateTimeField(auto_now_add=True)\n    seller = models.BooleanField(default=False)\n    # buyer = models.BooleanField(default=False) # only one needed",
+        "peekOfCode": "class Address(models.Model):\n    street = models.CharField(max_length=255)\n    city = models.CharField(max_length=255)\n    state = models.CharField(max_length=255)\n    country = models.CharField(max_length=255)\n    # geo = models.ForeignKey(Geo, verbose_name=_(\"Geo\"), on_delete=models.SET_NULL, null=True)\nclass User(AbstractUser):\n    updated_at = models.DateTimeField(auto_now_add=True)\n    seller = models.BooleanField(default=False)\n    address = models.ForeignKey(Address, verbose_name=_(\"User Address\"), on_delete=models.SET_NULL, null=True)",
         "detail": "user.models",
         "documentation": {}
     },
@@ -1354,8 +1405,17 @@
         "kind": 6,
         "importPath": "user.models",
         "description": "user.models",
-        "peekOfCode": "class User(AbstractUser):\n    # first_name = models.CharField(max_length=50)\n    updated_at = models.DateTimeField(auto_now_add=True)\n    seller = models.BooleanField(default=False)\n    # buyer = models.BooleanField(default=False) # only one needed\n    address = models.ForeignKey(Address, verbose_name=_(\"User Address\"), on_delete=models.SET_NULL, null=True)\n    def __str__(self):\n        return self.username",
+        "peekOfCode": "class User(AbstractUser):\n    updated_at = models.DateTimeField(auto_now_add=True)\n    seller = models.BooleanField(default=False)\n    address = models.ForeignKey(Address, verbose_name=_(\"User Address\"), on_delete=models.SET_NULL, null=True)\n    def __str__(self):\n        return self.username",
         "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "GeoSerializer",
+        "kind": 6,
+        "importPath": "user.serializers",
+        "description": "user.serializers",
+        "peekOfCode": "class GeoSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Geo\n        fields = '__all__'\nclass AddressSerializer(serializers.ModelSerializer):\n    # geo = GeoSerializer()\n    class Meta:\n        model = Address\n        fields = '__all__'\n    # def create(self, validated_data):",
+        "detail": "user.serializers",
         "documentation": {}
     },
     {
@@ -1363,7 +1423,7 @@
         "kind": 6,
         "importPath": "user.serializers",
         "description": "user.serializers",
-        "peekOfCode": "class AddressSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Address\n        fields = '__all__'\nclass UserSerializer(serializers.ModelSerializer):\n    address = AddressSerializer()\n    # pasword = serializers.CharField()\n    class Meta:\n        model = User\n        # fields = '__all__'",
+        "peekOfCode": "class AddressSerializer(serializers.ModelSerializer):\n    # geo = GeoSerializer()\n    class Meta:\n        model = Address\n        fields = '__all__'\n    # def create(self, validated_data):\n    #     geo_data = validated_data.pop('geo') # remove from dic\n    #     geo = Geo.objects.create(**geo_data) # transform into dic\n    #     address = Address.objects.create(geo=geo, **validated_data) # insert\n    #     return address",
         "detail": "user.serializers",
         "documentation": {}
     },
