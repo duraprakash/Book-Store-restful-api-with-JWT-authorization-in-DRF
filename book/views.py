@@ -10,6 +10,7 @@ from .models import Author, Book, Category, SubCategory
 from .serializers import AuthorSerializer, BookSerializer, CategorySerializer, SubCategorySerializer
 from rest_framework.response import Response
 from rest_framework import status
+from django.db.models import Q
 
 # Create your views here.
 # Category
@@ -104,6 +105,15 @@ class BookListView(ListAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     
+    # # query params 1.1
+    # # change in BookSerializer -> lookup_field, extra_kwargs
+    # def get_queryset(self):
+    #     queryset = super().get_queryset()
+    #     slug = self.request.query_params.get('slug', None)
+    #     if slug is not None:
+    #         queryset = queryset.filter(Q(slug__icontains=slug)) # SELECT * FROM book WHERE slug LIKE '%ref%';
+    #     return queryset
+    
 class BookCreateView(CreateAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
@@ -112,6 +122,23 @@ class BookRetrieveView(RetrieveAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     lookup_field = 'pk'
+    # # query params
+    # def get_object(self):
+    #     queryset = self.get_queryset()
+
+    #     # Try to retrieve by slug first
+    #     slug = self.kwargs.get('slug')
+    #     if slug is not None:
+    #         # return queryset.filter(slug=slug).first()
+    #         if slug == int(slug):
+    #             return queryset.filter(Q(pk__icontains=slug))
+    #         return queryset.filter(Q(slug__icontains=slug))
+        
+    #     # obj = queryset.first()
+    #     # if obj is None:
+    #     #     raise status.HTTP_404_NOT_FOUND
+    #     # return obj
+    #     # Fallback to the default b33
     
 class BookUpdateView(UpdateAPIView):
     queryset = Book.objects.all()

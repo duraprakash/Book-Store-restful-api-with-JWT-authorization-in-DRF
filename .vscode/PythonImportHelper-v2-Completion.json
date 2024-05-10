@@ -25,6 +25,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -34,6 +42,46 @@
     },
     {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -158,6 +206,14 @@
         "description": "user.models",
         "isExtraImport": true,
         "detail": "user.models",
+        "documentation": {}
+    },
+    {
+        "label": "slugify",
+        "importPath": "django.template.defaultfilters",
+        "description": "django.template.defaultfilters",
+        "isExtraImport": true,
+        "detail": "django.template.defaultfilters",
         "documentation": {}
     },
     {
@@ -345,6 +401,14 @@
         "documentation": {}
     },
     {
+        "label": "Q",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -383,6 +447,14 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
         "documentation": {}
     },
     {
@@ -544,6 +616,33 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "book.migrations.0003_alter_book_author_alter_book_slug_and_more",
+        "description": "book.migrations.0003_alter_book_author_alter_book_slug_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0002_book_slug'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='book',\n            name='author',\n            field=models.ManyToManyField(to='book.author', verbose_name='Authors'),\n        ),",
+        "detail": "book.migrations.0003_alter_book_author_alter_book_slug_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "book.migrations.0004_rename_author_book_authors",
+        "description": "book.migrations.0004_rename_author_book_authors",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0003_alter_book_author_alter_book_slug_and_more'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='book',\n            old_name='author',\n            new_name='authors',\n        ),",
+        "detail": "book.migrations.0004_rename_author_book_authors",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "book.migrations.0005_book_stock_quantity",
+        "description": "book.migrations.0005_book_stock_quantity",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0004_rename_author_book_authors'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='book',\n            name='stock_quantity',\n            field=models.PositiveIntegerField(default=0),\n        ),",
+        "detail": "book.migrations.0005_book_stock_quantity",
+        "documentation": {}
+    },
+    {
         "label": "slug",
         "kind": 6,
         "importPath": "book.admin",
@@ -593,7 +692,7 @@
         "kind": 6,
         "importPath": "book.models",
         "description": "book.models",
-        "peekOfCode": "class Book(models.Model):\n    title = models.CharField(max_length=50, blank=False)\n    image = models.ImageField(upload_to='media')\n    isnb = models.CharField(max_length=50)\n    category = models.ForeignKey(Category, verbose_name=(\"Category\"), on_delete=models.CASCADE)\n    sub_category = models.ForeignKey(SubCategory, verbose_name=(\"Sub Category\"), on_delete=models.CASCADE)\n    author = models.ManyToManyField(Author, verbose_name=(\"Author\"))\n    price = models.DecimalField(max_digits=5, decimal_places=2)\n    publication = models.CharField(max_length=50)\n    publication_date = models.DateField()",
+        "peekOfCode": "class Book(models.Model):\n    title = models.CharField(max_length=50, blank=False)\n    image = models.ImageField(upload_to='media')\n    isnb = models.CharField(max_length=50)\n    category = models.ForeignKey(Category, verbose_name=(\"Category\"), on_delete=models.CASCADE)\n    sub_category = models.ForeignKey(SubCategory, verbose_name=(\"Sub Category\"), on_delete=models.CASCADE)\n    authors = models.ManyToManyField(Author, verbose_name=(\"Authors\"))\n    price = models.DecimalField(max_digits=5, decimal_places=2)\n    stock_quantity = models.PositiveIntegerField(default=0)\n    publication = models.CharField(max_length=50)",
         "detail": "book.models",
         "documentation": {}
     },
@@ -611,7 +710,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    # # uncomment this to show details instead of id",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -620,7 +719,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'",
+        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    # # uncomment this to show details instead of id\n    # authors = AuthorSerializer(many=True)\n    # category = CategorySerializer()\n    # sub_category = SubCategorySerializer()\n    class Meta:",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -629,7 +728,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = '__all__'",
+        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    # # uncomment this to show details instead of id\n    # authors = AuthorSerializer(many=True)\n    # category = CategorySerializer()\n    # sub_category = SubCategorySerializer()\n    class Meta:\n        model = Book\n        fields = '__all__'\n        # lookup_field = ['slug','pk']\n        # extra_kwargs = {",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -782,7 +881,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookListView(ListAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'",
+        "peekOfCode": "class BookListView(ListAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    # # query params 1.1\n    # # change in BookSerializer -> lookup_field, extra_kwargs\n    # def get_queryset(self):\n    #     queryset = super().get_queryset()\n    #     slug = self.request.query_params.get('slug', None)\n    #     if slug is not None:\n    #         queryset = queryset.filter(Q(slug__icontains=slug)) # SELECT * FROM book WHERE slug LIKE '%ref%';",
         "detail": "book.views",
         "documentation": {}
     },
@@ -791,7 +890,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer",
+        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\n    # # query params\n    # def get_object(self):\n    #     queryset = self.get_queryset()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -800,7 +899,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookUpdateView(UpdateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()",
+        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\n    # # query params\n    # def get_object(self):\n    #     queryset = self.get_queryset()\n    #     # Try to retrieve by slug first\n    #     slug = self.kwargs.get('slug')\n    #     if slug is not None:",
         "detail": "book.views",
         "documentation": {}
     },
@@ -1052,7 +1151,7 @@
         "kind": 5,
         "importPath": "config.urls",
         "description": "config.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('users/', include('user.urls')),\n    path('books/', include('book.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('users/', include('user.urls')),\n    path('books/', include('book.urls')),\n]\n# image access 1.2\nurlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "config.urls",
         "documentation": {}
     },

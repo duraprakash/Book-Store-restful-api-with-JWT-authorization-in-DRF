@@ -1,5 +1,6 @@
 from django.db import models
 from user.models import User
+from django.template.defaultfilters import slugify
 
 # Create your models here.
 class Category(models.Model):
@@ -26,6 +27,9 @@ class Author(models.Model):
     nationality = models.CharField(max_length=50)
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES)
     
+    class Meta:
+        unique_together = ['name', 'dob']
+    
     def __str__(self):
         return self.name
     
@@ -35,16 +39,22 @@ class Book(models.Model):
     isnb = models.CharField(max_length=50)
     category = models.ForeignKey(Category, verbose_name=("Category"), on_delete=models.CASCADE)
     sub_category = models.ForeignKey(SubCategory, verbose_name=("Sub Category"), on_delete=models.CASCADE)
-    author = models.ManyToManyField(Author, verbose_name=("Author"))
+    authors = models.ManyToManyField(Author, verbose_name=("Authors"))
     price = models.DecimalField(max_digits=5, decimal_places=2)
+    stock_quantity = models.PositiveIntegerField(default=0)
     publication = models.CharField(max_length=50)
     publication_date = models.DateField()
-    slug = models.SlugField(default="", null=False)
+    slug = models.SlugField(default=None, null=False, unique=True)
     is_available = models.BooleanField(default=False)
     added_by = models.OneToOneField(User, verbose_name=("Added By"), on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
+        
     def __str__(self):
         return self.slug
 

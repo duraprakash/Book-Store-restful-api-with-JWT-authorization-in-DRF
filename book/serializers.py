@@ -18,6 +18,14 @@ class AuthorSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class BookSerializer(serializers.ModelSerializer):
+    # # uncomment this to show details instead of id
+    # authors = AuthorSerializer(many=True)
+    # category = CategorySerializer()
+    # sub_category = SubCategorySerializer()
     class Meta:
         model = Book
         fields = '__all__'
+        # lookup_field = ['slug','pk']
+        # extra_kwargs = {
+        #     'url': {'lookup_field': 'slug', 'lookup_field': 'pk'}
+        # }
