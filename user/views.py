@@ -3,10 +3,12 @@ from rest_framework.generics import (
     CreateAPIView,
     RetrieveAPIView,
     UpdateAPIView,
-    DestroyAPIView
+    DestroyAPIView,
+    
+    RetrieveUpdateAPIView,
 )
 from .models import User
-from .serializers import UserSerializer, UserListSerializer, LoginSerializer
+from .serializers import LoginSerializer, UserListSerializer, UserSerializer, UserUpdateSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework import status
 from rest_framework.response import Response
@@ -25,6 +27,7 @@ def get_tokens_for_user(user):
     }
     
 class UserCreateView(CreateAPIView):
+    queryset = User.objects.all()
     serializer_class = UserSerializer
     
     def post(self, request, *args, **kwargs):
@@ -43,8 +46,8 @@ class Seller(ListAPIView):
         return User.objects.filter(seller=True)
     
 class UserListView(ListAPIView):
-    permission_classes = (IsAuthenticated,)
-    authentication_classes = (JWTAuthentication,)
+    # permission_classes = (IsAuthenticated,)
+    # authentication_classes = (JWTAuthentication,)
     queryset = User.objects.all()
     serializer_class = UserListSerializer
 
@@ -52,21 +55,11 @@ class UserRetrieveView(RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserListSerializer
     
-class UserUpdateView(UpdateAPIView):
+class UserUpdateView(RetrieveUpdateAPIView):
     queryset = User.objects.all()
-    serializer_class = UserListSerializer
+    serializer_class = UserUpdateSerializer
+    lookup_field = 'pk'
     
-    def update(self, request, *args, **kwargs):
-        instance = self.get_object()
-        
-        # Serialize the old object before updating
-        old_data = UserListSerializer(instance).data
-
-        serializer = self.get_serializer(instance, data=request.data, partial=True)
-        serializer.is_valid(raise_exception=True)
-        self.perform_update(serializer)
-        
-        return Response({'old_data': old_data, 'new_data': serializer.data}, status=status.HTTP_200_OK)
     
 class UserDeleteView(DestroyAPIView):
     queryset = User.objects.all()

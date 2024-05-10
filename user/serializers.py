@@ -1,34 +1,75 @@
 from rest_framework import serializers
-from .models import User
+from .models import Address, User
 from django.contrib.auth.models import Group
 from django.contrib.auth import authenticate
 
+class AddressSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Address
+        fields = '__all__'
+        
 class UserSerializer(serializers.ModelSerializer):
+    address = AddressSerializer()
+    # pasword = serializers.CharField()
     class Meta:
         model = User
         # fields = '__all__'
-        fields = ['username', 'password', 'email', 'seller']
+        fields = ['username', 'password', 'email', 'seller', 'address']
+        extra_kwargs = {
+            'password': {'write_only': True},  # Ensure password is write-only
+        }
+
         
     def create(self, validated_data):
-        # password = validated_data.pop('password')
-        seller = validated_data.get('seller')
+        address_data = validated_data.pop('address')
+        address = Address.objects.create(**address_data)
+        
         user = User.objects.create_user(**validated_data)
+        
+        # Assign user to seller or buyer group based on 'seller' flag
+        seller = validated_data.get('seller', False)
+        if seller:
+            group_name = 'seller'
+        else:
+            group_name = 'buyer'
+        
         try:
-            seller_group = Group.objects.get(name='seller')
-            buyer_group = Group.objects.get(name='buyer')
+            group = Group.objects.get(name=group_name)
         except Group.DoesNotExist:
             raise serializers.ValidationError("Group not found")
-        if seller:
-            user.groups.add(seller_group)
-        else:
-            user.groups.add(buyer_group)
+        
+        user.address = address
+        user.groups.add(group)
         user.save()
-        return user
+        
+        return user        
 
 class UserListSerializer(serializers.ModelSerializer):
+    address = AddressSerializer()
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'seller']
+        fields = ['id', 'username', 'email', 'seller', 'address']
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+    address = AddressSerializer()
+
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'seller', 'address']
+
+    def update(self, instance, validated_data):
+        address_data = validated_data.pop('address', None)
+        if address_data:
+            address_instance = instance.address
+            for key, value in address_data.items():
+                setattr(address_instance, key, value)
+            address_instance.save()
+
+        for key, value in validated_data.items():
+            setattr(instance, key, value)
+        instance.save()
+
+        return instance 
         
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
@@ -49,3 +90,4 @@ class LoginSerializer(serializers.Serializer):
 
         attrs['user'] = user
         return attrs
+    
