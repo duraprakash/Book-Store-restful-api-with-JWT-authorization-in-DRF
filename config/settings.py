@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'user', # auth 1.2
     'book',
     'orders',
+    'wishlist',
 ]
 
 MIDDLEWARE = [

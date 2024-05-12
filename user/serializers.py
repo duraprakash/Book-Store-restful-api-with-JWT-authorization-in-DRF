@@ -51,7 +51,10 @@ class UserSerializer(serializers.ModelSerializer):
         try:
             group = Group.objects.get(name=group_name)
         except Group.DoesNotExist:
-            raise serializers.ValidationError("Group not found")
+            # raise serializers.ValidationError("Group not found")
+            sellers = ['seller', 'buyer']
+            for i in sellers:
+                group = Group.objects.create(name=i) # add buyer and seller if not exists but permission not assign yet
         
         user.address = address
         user.groups.add(group)

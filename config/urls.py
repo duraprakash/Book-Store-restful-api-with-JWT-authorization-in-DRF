@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('user.urls')),
     path('books/', include('book.urls')),
+    path('orders/', include('orders.urls')),
 ]
 # image access 1.2
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

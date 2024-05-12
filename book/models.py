@@ -40,13 +40,13 @@ class Book(models.Model):
     category = models.ForeignKey(Category, verbose_name=("Category"), on_delete=models.CASCADE)
     sub_category = models.ForeignKey(SubCategory, verbose_name=("Sub Category"), on_delete=models.CASCADE)
     authors = models.ManyToManyField(Author, verbose_name=("Authors"))
-    price = models.DecimalField(max_digits=5, decimal_places=2)
+    price = models.FloatField(default=0)
     stock_quantity = models.PositiveIntegerField(default=0)
     publication = models.CharField(max_length=50)
     publication_date = models.DateField()
     slug = models.SlugField(default=None, null=False, unique=True)
     is_available = models.BooleanField(default=False)
-    added_by = models.OneToOneField(User, verbose_name=("Added By"), on_delete=models.CASCADE)
+    added_by = models.ForeignKey(User, verbose_name=("Added By"), on_delete=models.CASCADE) # book adding by same user issuse fixed
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
