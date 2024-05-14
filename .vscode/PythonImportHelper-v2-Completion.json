@@ -418,14 +418,6 @@
         "documentation": {}
     },
     {
-        "label": "get_object_or_404",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -964,7 +956,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())",
+        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -973,7 +965,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookSlugSerializer(serializers.ModelSerializer):",
+        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookSlugSerializer(serializers.ModelSerializer):",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -982,7 +974,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookSlugSerializer(serializers.ModelSerializer):\n    authors = AuthorSerializer(many=True)\n    category = CategorySerializer()\n    sub_category = SubCategorySerializer()\n    class Meta:",
+        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookSlugSerializer(serializers.ModelSerializer):\n    authors = AuthorSerializer(many=True)\n    category = CategorySerializer()\n    sub_category = SubCategorySerializer()\n    class Meta:",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -991,7 +983,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class BookSlugSerializer(serializers.ModelSerializer):\n    authors = AuthorSerializer(many=True)\n    category = CategorySerializer()\n    sub_category = SubCategorySerializer()\n    class Meta:\n        model = Book\n        # fields = '__all__'\n        fields = ['title', 'category', 'authonrs', 'category', 'sub_category']\n# class BookSlugSerializer(serializers.ModelSerializer):\n#     # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())",
+        "peekOfCode": "class BookSlugSerializer(serializers.ModelSerializer):\n    authors = AuthorSerializer(many=True)\n    category = CategorySerializer()\n    sub_category = SubCategorySerializer()\n    class Meta:\n        model = Book\n        fields = '__all__'\n        # fields = ['title', 'category', 'authonrs', 'category', 'sub_category']\n# class BookSlugSerializer(serializers.ModelSerializer):\n#     # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -1171,7 +1163,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer\n    lookup_field = 'slug'\n    def get_object(self):\n        queryset = self.get_queryset()\n        # Try to get the slug from path\n        slug_path = self.kwargs.get('slug') # if path('<slug:slug>,...') # kwargs.get('slug) eg: http://127.0.0.1:8000/books/fantastic-four1/\n        if slug_path:\n            try:",
+        "peekOfCode": "class BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer\n    lookup_field = 'slug'\n    def get_object(self):\n        queryset = self.get_queryset()\n        # Try to get the slug from path\n        slug_path = self.kwargs.get('slug') # if path('<slug:slug>,...') # kwargs.get('slug) eg: http://127.0.0.1:8000/books/fantastic-four1/\n        if slug_path:\n            print('slug_path received')",
         "detail": "book.views",
         "documentation": {}
     },

@@ -13,7 +13,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.db.models import Q
 from django.http import Http404
-from django.shortcuts import get_object_or_404
 
 # Create your views here.
 # Category
@@ -133,25 +132,30 @@ class BookRetrieveSlugView(RetrieveAPIView):
 
     def get_object(self):
         queryset = self.get_queryset()
-        
+
         # Try to get the slug from path
         slug_path = self.kwargs.get('slug') # if path('<slug:slug>,...') # kwargs.get('slug) eg: http://127.0.0.1:8000/books/fantastic-four1/
         if slug_path:
+            print('slug_path received')
             try:
+                print('slug_path get')
                 return queryset.get(slug=slug_path)
             except Book.DoesNotExist:
+                print('slug_path pass')
                 pass
             
         # Try to get the slug from query params  
         slug_query = self.request.query_params.get('slug') # if path('',...) # query_params.get('slug) eg: http://127.0.0.1:8000/books/?slug=fantastic-four1
         if slug_query:
+            print('slug_query received')
             try:
+                print('slug_query get')
                 return queryset.get(slug=slug_query)
             except Book.DoesNotExist:
+                print('slug_query pass')
                 pass
-            
-        raise get_object_or_404("Slug parameter not provided or book not found")
-
+        raise Http404("Slug parameter not provided or book not found")
+    
 class BookSimilarRetrieveSlugView(RetrieveAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSlugSerializer
@@ -165,20 +169,17 @@ class BookSimilarRetrieveSlugView(RetrieveAPIView):
     #         # Try to get the slug from path
     #         slug_path = self.kwargs.get('slug')
     #         if slug_path:
-    #             print('path')
     #             similar_books |= queryset.filter(Q(title__icontains=slug_path) | Q(slug__icontains=slug_path))
 
     #         # Try to get the slug from query params
     #         slug_query = self.request.query_params.get('slug')
     #         if slug_query:
-    #             print('params')
     #             similar_books |= queryset.filter(Q(title__icontains=slug_query) | Q(slug__icontains=slug_query))
 
     #         if not similar_books.exists():
-    #             print('not found')
     #             raise Http404("No similar books found")
 
-    #         return similar_books
+    #         return similar_books.first()
     
     # show all
     def get_object(self):
@@ -198,12 +199,12 @@ class BookSimilarRetrieveSlugView(RetrieveAPIView):
         if not similar_books.exists():
             raise Http404("No similar books found")
 
-        # # Serialize the queryset
+        # # # Serialize the queryset
         # serializer = self.get_serializer(similar_books, many=True)
         
         # return serializer.data
-        return similar_books
-        # return similar_books.first()
+        # return similar_books
+        return similar_books.first()
         
 # class BookRetrieveSlugView(RetrieveAPIView):
 #     queryset = Book.objects.all()

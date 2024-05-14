@@ -18,7 +18,7 @@ class AuthorSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class BookSerializer(serializers.ModelSerializer):
-    # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())
+    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())
     
     class Meta:
         model = Book
@@ -31,8 +31,8 @@ class BookSlugSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Book
-        # fields = '__all__'
-        fields = ['title', 'category', 'authonrs', 'category', 'sub_category']
+        fields = '__all__'
+        # fields = ['title', 'category', 'authonrs', 'category', 'sub_category']
         
 # class BookSlugSerializer(serializers.ModelSerializer):
 #     # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())
