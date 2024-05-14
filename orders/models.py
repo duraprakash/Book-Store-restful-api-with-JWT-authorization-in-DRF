@@ -23,7 +23,7 @@ class Order(models.Model):
 class OrderItem(models.Model):
     orderId = models.ForeignKey(Order, verbose_name=_("Order No."), on_delete=models.CASCADE)
     bookId = models.ForeignKey(Book, verbose_name=_("Book"), on_delete=models.CASCADE) # this
-    order_quantity = models.FloatField(default=0)
+    order_quantity = models.DecimalField(_(""), max_digits=5, decimal_places=2)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
     
@@ -36,6 +36,8 @@ class OrderItem(models.Model):
     def cost(self):
         return round(self.order_quantity * self.bookId.price, 2) # TODO: 
     
+
+
 
 
     

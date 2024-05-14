@@ -1,33 +1,14 @@
 from django.urls import path
-from .views import (
-    # Category
-    CategoryListView,
-    CategoryCreateView,
-    CategoryRetrieveView,
-    CategoryUpdateView,
-    CategoryDeleteView,
-    
-    # Sub-Category
-    SubCategoryListView,
-    SubCategoryCreateView,
-    SubCategoryRetrieveView,
-    SubCategoryUpdateView,
-    SubCategoryDeleteView,
-    
-    # Author
-    AuthorListView,
-    AuthorCreateView,
-    AuthorRetrieveView,
-    AuthorUpdateView,
-    AuthorDeleteView,
-    
-    # Book
+from .views import (# Author
+    AuthorListView, # Book
     BookListView,
-    BookCreateView,
-    BookRetrieveView,
-    BookUpdateView,
-    BookDeleteView,
-)
+    # Category
+    CategoryListView, # Sub-Category
+    SubCategoryListView, AuthorCreateView,
+    AuthorDeleteView, AuthorRetrieveView, AuthorUpdateView, BookCreateView, BookDeleteView,
+    BookRetrieveSlugView, BookSimilarRetrieveSlugView, BookRetrieveView, BookUpdateView,
+    CategoryCreateView, CategoryDeleteView, CategoryRetrieveView, CategoryUpdateView,
+    SubCategoryCreateView, SubCategoryDeleteView, SubCategoryRetrieveView, SubCategoryUpdateView)
 
 urlpatterns = [
     # path('', ),
@@ -57,7 +38,12 @@ urlpatterns = [
     path('', BookListView.as_view(), name='books'),
     path('create/', BookCreateView.as_view(), name='book_create'),
     path('<int:pk>/', BookRetrieveView.as_view(), name='book_retrieve'),
-    # path('<slug:slug>/', BookRetrieveView.as_view(), name='book_retrieve_slug'),
     path('<int:pk>/update/', BookUpdateView.as_view(), name='book_update'),
     path('<int:pk>/delete/', BookDeleteView.as_view(), name='book_delete'),
+    
+    path('<slug:slug>/slug-kwargs/', BookRetrieveSlugView.as_view(), name='book_retrieve_slug_path'), # slug from path ie: http://127.0.0.1:8000/books/fantastic-four1/slug-kwargs/
+    path('slug-params/', BookRetrieveSlugView.as_view(), name='book_retrieve_slug_params'), # slug from params ie: http://127.0.0.1:8000/books/slug-params/?slug=fantastic-four1
+    
+    path('<slug:slug>/slug-kwargs/similar/', BookSimilarRetrieveSlugView.as_view(), name='book_retrieve_slug_similar_path'), # slug from path ie: http://127.0.0.1:8000/books/fantastic-four/slug-kwargs/similar/
+    path('slug-params/similar/', BookSimilarRetrieveSlugView.as_view(), name='book_retrieve_slug_similar_params'), # slug from params ie: http://127.0.0.1:8000/books/slug-params/similar/?slug=fantastic-four
 ]

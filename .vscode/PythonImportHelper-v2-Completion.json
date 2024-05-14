@@ -32,134 +32,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -224,14 +96,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -241,110 +105,6 @@
     },
     {
         "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -417,22 +177,6 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -502,6 +246,14 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
         "documentation": {}
     },
     {
@@ -546,22 +298,6 @@
     },
     {
         "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "generics",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -673,7 +409,16 @@
         "documentation": {}
     },
     {
-        "label": "render",
+        "label": "django.shortcuts",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -825,6 +570,14 @@
         "documentation": {}
     },
     {
+        "label": "Http404",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -890,14 +643,6 @@
         "documentation": {}
     },
     {
-        "label": "Order",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
         "label": "OrderItem",
         "importPath": "orders.models",
         "description": "orders.models",
@@ -906,39 +651,6 @@
         "documentation": {}
     },
     {
-        "label": "Order",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "OrderItem",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "orders.testorderbag.testserializers",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "orders.testorderbag.testserializers",
-        "description": "orders.testorderbag.testserializers",
-        "detail": "orders.testorderbag.testserializers",
-        "documentation": {}
-    },
-    {
-        "label": "TestOrderItemBagSerializer",
-        "importPath": "orders.testorderbag.testserializers",
-        "description": "orders.testorderbag.testserializers",
-        "isExtraImport": true,
-        "detail": "orders.testorderbag.testserializers",
-        "documentation": {}
-    },
-    {
         "label": "gettext_lazy",
         "importPath": "django.utils.translation",
         "description": "django.utils.translation",
@@ -960,6 +672,14 @@
         "description": "django.utils.translation",
         "isExtraImport": true,
         "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "book.models",
+        "description": "book.models",
+        "isExtraImport": true,
+        "detail": "book.models",
         "documentation": {}
     },
     {
@@ -1019,23 +739,6 @@
         "documentation": {}
     },
     {
-        "label": "rest_framework.views",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "rest_framework.views",
-        "description": "rest_framework.views",
-        "detail": "rest_framework.views",
-        "documentation": {}
-    },
-    {
-        "label": "APIView",
-        "importPath": "rest_framework.views",
-        "description": "rest_framework.views",
-        "isExtraImport": true,
-        "detail": "rest_framework.views",
-        "documentation": {}
-    },
-    {
         "label": "user",
         "importPath": "test",
         "description": "test",
@@ -1057,15 +760,6 @@
         "description": "rest_framework_simplejwt.authentication",
         "isExtraImport": true,
         "detail": "rest_framework_simplejwt.authentication",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
         "documentation": {}
     },
     {
@@ -1168,6 +862,14 @@
         "documentation": {}
     },
     {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -1192,24 +894,6 @@
         "description": "book.migrations.0002_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('book', '0001_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='book',\n            name='added_by',",
         "detail": "book.migrations.0002_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "book.migrations.0003_alter_book_added_by",
-        "description": "book.migrations.0003_alter_book_added_by",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0002_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='book',\n            name='added_by',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='Added By'),",
-        "detail": "book.migrations.0003_alter_book_added_by",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "book.migrations.0004_alter_book_price",
-        "description": "book.migrations.0004_alter_book_price",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0003_alter_book_added_by'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='book',\n            name='price',\n            field=models.FloatField(default=0),\n        ),",
-        "detail": "book.migrations.0004_alter_book_price",
         "documentation": {}
     },
     {
@@ -1280,7 +964,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    # # uncomment this to show details instead of id",
+        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -1289,7 +973,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    # # uncomment this to show details instead of id\n    # authors = AuthorSerializer(many=True)\n    # category = CategorySerializer()\n    # sub_category = SubCategorySerializer()\n    class Meta:",
+        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookSlugSerializer(serializers.ModelSerializer):",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -1298,7 +982,16 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    # # uncomment this to show details instead of id\n    # authors = AuthorSerializer(many=True)\n    # category = CategorySerializer()\n    # sub_category = SubCategorySerializer()\n    class Meta:\n        model = Book\n        fields = '__all__'\n        # lookup_field = ['slug','pk']\n        # extra_kwargs = {",
+        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookSlugSerializer(serializers.ModelSerializer):\n    authors = AuthorSerializer(many=True)\n    category = CategorySerializer()\n    sub_category = SubCategorySerializer()\n    class Meta:",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookSlugSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class BookSlugSerializer(serializers.ModelSerializer):\n    authors = AuthorSerializer(many=True)\n    category = CategorySerializer()\n    sub_category = SubCategorySerializer()\n    class Meta:\n        model = Book\n        # fields = '__all__'\n        fields = ['title', 'category', 'authonrs', 'category', 'sub_category']\n# class BookSlugSerializer(serializers.ModelSerializer):\n#     # authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -1460,7 +1153,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\n    # # query params\n    # def get_object(self):\n    #     queryset = self.get_queryset()",
+        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer",
         "detail": "book.views",
         "documentation": {}
     },
@@ -1469,7 +1162,25 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\n    # # query params\n    # def get_object(self):\n    #     queryset = self.get_queryset()\n    #     # Try to retrieve by slug first\n    #     slug = self.kwargs.get('slug')\n    #     if slug is not None:",
+        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer\n    lookup_field = 'slug'\n    def get_object(self):\n        queryset = self.get_queryset()",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "BookRetrieveSlugView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer\n    lookup_field = 'slug'\n    def get_object(self):\n        queryset = self.get_queryset()\n        # Try to get the slug from path\n        slug_path = self.kwargs.get('slug') # if path('<slug:slug>,...') # kwargs.get('slug) eg: http://127.0.0.1:8000/books/fantastic-four1/\n        if slug_path:\n            try:",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "BookSimilarRetrieveSlugView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class BookSimilarRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer\n    lookup_field = 'slug'\n    # # show first\n    # def get_object(self):\n    #         queryset = self.get_queryset()\n    #         similar_books = queryset.none()\n    #         # Try to get the slug from path\n    #         slug_path = self.kwargs.get('slug')",
         "detail": "book.views",
         "documentation": {}
     },
@@ -1658,7 +1369,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nfrom datetime import timedelta # jwt 1.1\nfrom django.conf import settings\n# jwt 1.2\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(minutes=5),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=1),",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nfrom datetime import timedelta # jwt 1.1\nfrom django.conf import settings\n# jwt 1.2\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=1),",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1667,7 +1378,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nfrom datetime import timedelta # jwt 1.1\nfrom django.conf import settings\n# jwt 1.2\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(minutes=5),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=1),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nfrom datetime import timedelta # jwt 1.1\nfrom django.conf import settings\n# jwt 1.2\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=1),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1676,7 +1387,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "SIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(minutes=5),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=1),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,\n    \"ALGORITHM\": \"HS256\",\n    \"SIGNING_KEY\": settings.SECRET_KEY,\n    \"VERIFYING_KEY\": \"\",\n    \"AUDIENCE\": None,",
+        "peekOfCode": "SIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=1),\n    \"ROTATE_REFRESH_TOKENS\": False,\n    \"BLACKLIST_AFTER_ROTATION\": False,\n    \"UPDATE_LAST_LOGIN\": False,\n    \"ALGORITHM\": \"HS256\",\n    \"SIGNING_KEY\": settings.SECRET_KEY,\n    \"VERIFYING_KEY\": \"\",\n    \"AUDIENCE\": None,",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1685,7 +1396,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    )\n}\n# auth 1.1\nAUTH_USER_MODEL = 'user.User'\n# pillow 1.1\nMEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR, 'media')",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',\n    'PAGE_SIZE': 10\n}\n# auth 1.1\nAUTH_USER_MODEL = 'user.User'\n# pillow 1.1",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1753,96 +1464,6 @@
         "documentation": {}
     },
     {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "orders.migrations.0003_rename_order_orderitem_orderid_alter_order_userid_and_more",
-        "description": "orders.migrations.0003_rename_order_orderitem_orderid_alter_order_userid_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0003_alter_book_added_by'),\n        ('orders', '0002_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='orderitem',\n            old_name='order',",
-        "detail": "orders.migrations.0003_rename_order_orderitem_orderid_alter_order_userid_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "orders.migrations.0004_alter_orderitem_unique_together",
-        "description": "orders.migrations.0004_alter_orderitem_unique_together",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0003_rename_order_orderitem_orderid_alter_order_userid_and_more'),\n    ]\n    operations = [\n        migrations.AlterUniqueTogether(\n            name='orderitem',\n            unique_together=set(),\n        ),\n    ]",
-        "detail": "orders.migrations.0004_alter_orderitem_unique_together",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "orders.migrations.0005_order_total_price_orderitem_price_orderitem_userid",
-        "description": "orders.migrations.0005_order_total_price_orderitem_price_orderitem_userid",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0004_alter_orderitem_unique_together'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='total_price',\n            field=models.DecimalField(decimal_places=2, default=0, max_digits=5),",
-        "detail": "orders.migrations.0005_order_total_price_orderitem_price_orderitem_userid",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "orders.migrations.0006_remove_order_total_price_remove_orderitem_price_and_more",
-        "description": "orders.migrations.0006_remove_order_total_price_remove_orderitem_price_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0005_order_total_price_orderitem_price_orderitem_userid'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='order',\n            name='total_price',\n        ),\n        migrations.RemoveField(",
-        "detail": "orders.migrations.0006_remove_order_total_price_remove_orderitem_price_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "orders.migrations.0007_order_total_amount",
-        "description": "orders.migrations.0007_order_total_amount",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0006_remove_order_total_price_remove_orderitem_price_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='total_amount',\n            field=models.DecimalField(decimal_places=2, default=0, max_digits=5),\n        ),",
-        "detail": "orders.migrations.0007_order_total_amount",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "orders.migrations.0008_alter_order_total_amount",
-        "description": "orders.migrations.0008_alter_order_total_amount",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0007_order_total_amount'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='total_amount',\n            field=models.FloatField(default=0),\n        ),",
-        "detail": "orders.migrations.0008_alter_order_total_amount",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "orders.migrations.0009_alter_orderitem_order_quantity",
-        "description": "orders.migrations.0009_alter_orderitem_order_quantity",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0008_alter_order_total_amount'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='orderitem',\n            name='order_quantity',\n            field=models.FloatField(default=0),\n        ),",
-        "detail": "orders.migrations.0009_alter_orderitem_order_quantity",
-        "documentation": {}
-    },
-    {
-        "label": "TestOrderItemBagView",
-        "kind": 6,
-        "importPath": "orders.testorderbag.testbagview",
-        "description": "orders.testorderbag.testbagview",
-        "peekOfCode": "class TestOrderItemBagView(generics.ListAPIView):\n    queryset = Order.objects.all()\n    serializer_class = TestOrderItemBagSerializer",
-        "detail": "orders.testorderbag.testbagview",
-        "documentation": {}
-    },
-    {
-        "label": "TestOrdeBagSerializer",
-        "kind": 6,
-        "importPath": "orders.testorderbag.testserializers",
-        "description": "orders.testorderbag.testserializers",
-        "peekOfCode": "class TestOrdeBagSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = '__all__'\nclass TestOrderItemBagSerializer(serializers.ModelSerializer):\n    orderId = TestOrdeBagSerializer()\n    class Meta:\n        model = OrderItem\n        # fields = '__all__'\n        fields = ['orderId']",
-        "detail": "orders.testorderbag.testserializers",
-        "documentation": {}
-    },
-    {
-        "label": "TestOrderItemBagSerializer",
-        "kind": 6,
-        "importPath": "orders.testorderbag.testserializers",
-        "description": "orders.testorderbag.testserializers",
-        "peekOfCode": "class TestOrderItemBagSerializer(serializers.ModelSerializer):\n    orderId = TestOrdeBagSerializer()\n    class Meta:\n        model = OrderItem\n        # fields = '__all__'\n        fields = ['orderId']",
-        "detail": "orders.testorderbag.testserializers",
-        "documentation": {}
-    },
-    {
         "label": "OrdersConfig",
         "kind": 6,
         "importPath": "orders.apps",
@@ -1865,7 +1486,7 @@
         "kind": 6,
         "importPath": "orders.models",
         "description": "orders.models",
-        "peekOfCode": "class OrderItem(models.Model):\n    orderId = models.ForeignKey(Order, verbose_name=_(\"Order No.\"), on_delete=models.CASCADE)\n    bookId = models.ForeignKey(Book, verbose_name=_(\"Book\"), on_delete=models.CASCADE) # this\n    order_quantity = models.FloatField(default=0)\n    created_at = models.DateTimeField(auto_now=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    # class Meta:\n    #     unique_together = ('orderId', 'bookId') # this\n    def __str__(self):\n        return f'Book- {self.bookId}'",
+        "peekOfCode": "class OrderItem(models.Model):\n    orderId = models.ForeignKey(Order, verbose_name=_(\"Order No.\"), on_delete=models.CASCADE)\n    bookId = models.ForeignKey(Book, verbose_name=_(\"Book\"), on_delete=models.CASCADE) # this\n    order_quantity = models.DecimalField(_(\"\"), max_digits=5, decimal_places=2)\n    created_at = models.DateTimeField(auto_now=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    # class Meta:\n    #     unique_together = ('orderId', 'bookId') # this\n    def __str__(self):\n        return f'Book- {self.bookId}'",
         "detail": "orders.models",
         "documentation": {}
     },
@@ -1874,16 +1495,7 @@
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderItemSerializer(serializers.ModelSerializer):\n    # bookId = BookSerializer() # show book info in order\n    class Meta:\n        model = OrderItem\n        fields = ['bookId', 'order_quantity'] # this\nclass OrderItemCreateSerializer(serializers.ModelSerializer):\n    userId = serializers.IntegerField()\n    class Meta:\n        model = OrderItem\n        fields = ['orderId', 'bookId', 'order_quantity', 'userId'] # this   ",
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "OrderItemCreateSerializer",
-        "kind": 6,
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "peekOfCode": "class OrderItemCreateSerializer(serializers.ModelSerializer):\n    userId = serializers.IntegerField()\n    class Meta:\n        model = OrderItem\n        fields = ['orderId', 'bookId', 'order_quantity', 'userId'] # this   \nclass OrderSerializer(serializers.ModelSerializer):\n    books = serializers.SerializerMethodField() # this\n    class Meta:\n        model = Order\n        fields = ['id', 'userId', 'created_at', 'updated_at', 'order_status', 'books'] # this",
+        "peekOfCode": "class OrderItemSerializer(serializers.ModelSerializer):\n    # bookId = BookSerializer() # show book info in order\n    class Meta:\n        model = OrderItem\n        fields = '__all__'\n        # fields = ['bookId', 'order_quantity'] # this\nclass OrderSerializer(serializers.ModelSerializer):\n    # books = serializers.SerializerMethodField() # this\n    class Meta:\n        model = Order",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1892,7 +1504,16 @@
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    books = serializers.SerializerMethodField() # this\n    class Meta:\n        model = Order\n        fields = ['id', 'userId', 'created_at', 'updated_at', 'order_status', 'books'] # this\n    def get_books(self, obj): # this\n        books = OrderItem.objects.filter(orderId=obj)\n        serializer = OrderItemSerializer(instance=books, many=True)\n        return serializer.data      \nclass OrderCreateSerializer(serializers.ModelSerializer):",
+        "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    # books = serializers.SerializerMethodField() # this\n    class Meta:\n        model = Order\n        fields = '__all__'\n        # fields = ['id', 'userId', 'created_at', 'updated_at', 'order_status', 'books'] # this\n        # fields = ['id', 'userId', 'created_at', 'updated_at', 'order_status'] # this\n\"\"\" Normal order and order item \"\"\"\n    # def get_books(self, obj): # this\n    #     books = OrderItem.objects.filter(orderId=obj)",
+        "detail": "orders.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemCreateSerializer",
+        "kind": 6,
+        "importPath": "orders.serializers",
+        "description": "orders.serializers",
+        "peekOfCode": "class OrderItemCreateSerializer(serializers.ModelSerializer):\n    # userId = serializers.IntegerField()\n    class Meta:\n        model = OrderItem\n        # fields = ['orderId', 'bookId', 'order_quantity', 'userId'] # this   \n        fields = ['orderId', 'bookId', 'order_quantity'] # this   \nclass OrderCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = '__all__'",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1901,7 +1522,16 @@
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        # fields = '__all__'\n        fields = ['userId', 'order_status']\n    def create(self, validated_data):\n        order = Order.objects.create(**validated_data)\n        return order\nclass OrderWriteSerializer(serializers.ModelSerializer):\n    \"\"\"",
+        "peekOfCode": "class OrderCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = '__all__'\n        # fields = ['userId', 'order_status']\n    def create(self, validated_data):\n        order = Order.objects.create(**validated_data)\n        return order\nclass OrderItemWriteSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "orders.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemWriteSerializer",
+        "kind": 6,
+        "importPath": "orders.serializers",
+        "description": "orders.serializers",
+        "peekOfCode": "class OrderItemWriteSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['id', 'orderId', 'bookId', 'order_quantity']\nclass OrderWriteSerializer(serializers.ModelSerializer):\n    items = OrderItemWriteSerializer(many=True, read_only=True)\n    class Meta:\n        model = Order\n        fields = ['id', 'userId', 'order_status', 'total_amount', 'items']\n        read_only_fields = ['id', 'total_amount']",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1910,25 +1540,7 @@
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderWriteSerializer(serializers.ModelSerializer):\n    \"\"\"\n    Serializer class to create order[bag] for current user and order items[book items]\n    \"\"\"\n    userId = serializers.HiddenField(default=serializers.CurrentUserDefault()) # should match with order model user reference\n    order_items = OrderItemSerializer(many=True) # orderitem model has orderId reference so we can get orderitem here\n    class Meta:\n        model = Order\n        fields = (\n            \"id\",",
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "TestOrderItemSerializer",
-        "kind": 6,
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "peekOfCode": "class TestOrderItemSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = '__all__'\nclass TestOrderSerializer(serializers.ModelSerializer):\n    items = OrderItemSerializer(many=True, required=False)\n    class Meta:\n        model = Order\n        fields = '__all__'",
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "TestOrderSerializer",
-        "kind": 6,
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "peekOfCode": "class TestOrderSerializer(serializers.ModelSerializer):\n    items = OrderItemSerializer(many=True, required=False)\n    class Meta:\n        model = Order\n        fields = '__all__'",
+        "peekOfCode": "class OrderWriteSerializer(serializers.ModelSerializer):\n    items = OrderItemWriteSerializer(many=True, read_only=True)\n    class Meta:\n        model = Order\n        fields = ['id', 'userId', 'order_status', 'total_amount', 'items']\n        read_only_fields = ['id', 'total_amount']",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1937,7 +1549,7 @@
         "kind": 5,
         "importPath": "orders.urls",
         "description": "orders.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', OrderListView.as_view(), name='orders'),\n    path('<int:pk>/userorder/', UserOrderItemListView.as_view(), name='user_order_item_list'), # get specific user order list\n    path('create/', OrderCreateView.as_view(), name='order-create'),\n    path('<int:pk>/', OrderRetrieveView.as_view(), name='order-retrieve'),\n    # path('<int:pk>/update/', OrderUpdateView.as_view(), name='order-update'),\n    path('<int:pk>/delete/', OrderDeleteView.as_view(), name='order-delete'),\n    path('order-items/', OrderItemListView.as_view(), name='orderitems'),\n    path('order-item/create/', OrderItemCreateView.as_view(), name='ordeitem-create'),\n    path('order-item/<int:pk>/', OrderItemRetrieveView.as_view(), name='ordeitem-retrieve'),",
+        "peekOfCode": "urlpatterns = [\n    # order\n    path('', OrderListView.as_view(), name='orders'),\n    path('create/', OrderCreateView.as_view(), name='order-create'),\n    path('<int:pk>/', OrderRetrieveView.as_view(), name='order-retrieve'),\n    path('<int:pk>/update/', OrderUpdateView.as_view(), name='order-update'),\n    path('<int:pk>/delete/', OrderDeleteView.as_view(), name='order-delete'),\n    # order-item\n    path('order-items/', OrderItemListView.as_view(), name='orderitems'),\n    path('order-item/create/', OrderItemCreateView.as_view(), name='ordeitem-create'),",
         "detail": "orders.urls",
         "documentation": {}
     },
@@ -1946,16 +1558,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderListView(ListAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass UserOrderItemListView(ListAPIView):\n    serializer_class = OrderSerializer\n    # lookup_field = 'userId'\n    def get_queryset(self):\n        userId = self.kwargs.get('pk')\n        return Order.objects.filter(userId=userId)\nclass OrderCreateView(CreateAPIView):",
-        "detail": "orders.views",
-        "documentation": {}
-    },
-    {
-        "label": "UserOrderItemListView",
-        "kind": 6,
-        "importPath": "orders.views",
-        "description": "orders.views",
-        "peekOfCode": "class UserOrderItemListView(ListAPIView):\n    serializer_class = OrderSerializer\n    # lookup_field = 'userId'\n    def get_queryset(self):\n        userId = self.kwargs.get('pk')\n        return Order.objects.filter(userId=userId)\nclass OrderCreateView(CreateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderCreateSerializer\nclass OrderRetrieveView(RetrieveAPIView):",
+        "peekOfCode": "class OrderListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    authentication_classes = [JWTAuthentication]\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderCreateView(CreateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderRetrieveView(RetrieveAPIView):\n    queryset = Order.objects.all()",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1964,7 +1567,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderCreateView(CreateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderCreateSerializer\nclass OrderRetrieveView(RetrieveAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderUpdateView(RetrieveUpdateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderDeleteView(DestroyAPIView):",
+        "peekOfCode": "class OrderCreateView(CreateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderRetrieveView(RetrieveAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderUpdateView(RetrieveUpdateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderDeleteView(DestroyAPIView):",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1973,7 +1576,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderRetrieveView(RetrieveAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderUpdateView(RetrieveUpdateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderDeleteView(DestroyAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n# order item",
+        "peekOfCode": "class OrderRetrieveView(RetrieveAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderUpdateView(RetrieveUpdateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderDeleteView(DestroyAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n    def destroy(self, request, *args, **kwargs):",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1982,7 +1585,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderUpdateView(RetrieveUpdateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderDeleteView(DestroyAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n# order item\nclass OrderItemListView(ListAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer",
+        "peekOfCode": "class OrderUpdateView(RetrieveUpdateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderDeleteView(DestroyAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        print(instance)\n        self.perform_destroy(instance)",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1991,7 +1594,16 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderDeleteView(DestroyAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n# order item\nclass OrderItemListView(ListAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemCreateView(CreateAPIView):\n    # permission_classes = [IsAuthenticated]\n    # authentication_classes = [JWTAuthentication]",
+        "peekOfCode": "class OrderDeleteView(DestroyAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        print(instance)\n        self.perform_destroy(instance)\n        return Response({'message':'Order deleted successfully'})\nclass UserOrderItemListView(ListAPIView):\n    serializer_class = OrderSerializer",
+        "detail": "orders.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserOrderItemListView",
+        "kind": 6,
+        "importPath": "orders.views",
+        "description": "orders.views",
+        "peekOfCode": "class UserOrderItemListView(ListAPIView):\n    serializer_class = OrderSerializer\n    # lookup_field = 'userId'\n    def get_queryset(self):\n        userId = self.kwargs.get('pk')\n        return Order.objects.filter(userId=userId)\n# order item\nclass OrderItemListView(ListAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -2000,7 +1612,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderItemListView(ListAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemCreateView(CreateAPIView):\n    # permission_classes = [IsAuthenticated]\n    # authentication_classes = [JWTAuthentication]\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemCreateSerializer\n    # def create(self, request, *args, **kwargs):\n    #     userId = request.user.id  # Access the current user's ID",
+        "peekOfCode": "class OrderItemListView(ListAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemCreateView(CreateAPIView):\n    # permission_classes = [IsAuthenticated]\n    # authentication_classes = [JWTAuthentication]\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemRetrieveView(RetrieveAPIView):\n    queryset = OrderItem.objects.all()",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -2009,7 +1621,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderItemCreateView(CreateAPIView):\n    # permission_classes = [IsAuthenticated]\n    # authentication_classes = [JWTAuthentication]\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemCreateSerializer\n    # def create(self, request, *args, **kwargs):\n    #     userId = request.user.id  # Access the current user's ID\n    #     order_data = {'userId': userId, 'order_status': 'P'}\n    #     order_serializer = OrderCreateSerializer(data=order_data)\n    #     order_serializer.is_valid(raise_exception=True)",
+        "peekOfCode": "class OrderItemCreateView(CreateAPIView):\n    # permission_classes = [IsAuthenticated]\n    # authentication_classes = [JWTAuthentication]\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemRetrieveView(RetrieveAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemUpdateView(RetrieveUpdateAPIView):\n    queryset = OrderItem.objects.all()",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -2018,7 +1630,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderItemRetrieveView(RetrieveAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemUpdateView(RetrieveUpdateAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemDeleteView(DestroyAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderWriteView(CreateAPIView):",
+        "peekOfCode": "class OrderItemRetrieveView(RetrieveAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemUpdateView(RetrieveUpdateAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemDeleteView(DestroyAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\n    def destroy(self, request, *args, **kwargs):",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -2027,7 +1639,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderItemUpdateView(RetrieveUpdateAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemDeleteView(DestroyAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderWriteView(CreateAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderWriteSerializer \n###### test",
+        "peekOfCode": "class OrderItemUpdateView(RetrieveUpdateAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderItemDeleteView(DestroyAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        print(instance)\n        self.perform_destroy(instance)",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -2036,7 +1648,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderItemDeleteView(DestroyAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\nclass OrderWriteView(CreateAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderWriteSerializer \n###### test\nimport logging\nlogger = logging.getLogger(__name__)\nclass TestOrderCreateAPIView(CreateAPIView):",
+        "peekOfCode": "class OrderItemDeleteView(DestroyAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        print(instance)\n        self.perform_destroy(instance)\n        return Response({'message':'Order item deleted successfully'})\n### create order for user then add orderitems\nclass OrderWriteView(CreateAPIView):",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -2045,25 +1657,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderWriteView(CreateAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderWriteSerializer \n###### test\nimport logging\nlogger = logging.getLogger(__name__)\nclass TestOrderCreateAPIView(CreateAPIView):\n    serializer_class = TestOrderSerializer\n    def create(self, request, *args, **kwargs):\n        user_id = request.data.get('userId')  # Assuming user_id is sent in the request data",
-        "detail": "orders.views",
-        "documentation": {}
-    },
-    {
-        "label": "TestOrderCreateAPIView",
-        "kind": 6,
-        "importPath": "orders.views",
-        "description": "orders.views",
-        "peekOfCode": "class TestOrderCreateAPIView(CreateAPIView):\n    serializer_class = TestOrderSerializer\n    def create(self, request, *args, **kwargs):\n        user_id = request.data.get('userId')  # Assuming user_id is sent in the request data\n        book_id = request.data.get('bookId')  # Assuming book_id is sent in the request data\n        order_quantity = request.data.get('order_quantity')  # Assuming order_quantity is sent in the request data\n        if user_id is None:\n            return Response({'message':'userId required'})\n        elif book_id is None:\n            return Response({'message':'bookId required'})",
-        "detail": "orders.views",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "kind": 5,
-        "importPath": "orders.views",
-        "description": "orders.views",
-        "peekOfCode": "logger = logging.getLogger(__name__)\nclass TestOrderCreateAPIView(CreateAPIView):\n    serializer_class = TestOrderSerializer\n    def create(self, request, *args, **kwargs):\n        user_id = request.data.get('userId')  # Assuming user_id is sent in the request data\n        book_id = request.data.get('bookId')  # Assuming book_id is sent in the request data\n        order_quantity = request.data.get('order_quantity')  # Assuming order_quantity is sent in the request data\n        if user_id is None:\n            return Response({'message':'userId required'})\n        elif book_id is None:",
+        "peekOfCode": "class OrderWriteView(CreateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderWriteSerializer\n    def create(self, request, *args, **kwargs):\n        def calculate_total_amount(items):\n            # Logic to calculate total amount based on items\n            total_amount = 0\n            for item_data in items:\n                book = item_data['bookId']\n                total_amount += item_data['order_quantity'] * book.price",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -2074,78 +1668,6 @@
         "description": "user.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Address',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "user.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "user.migrations.0002_alter_user_address",
-        "description": "user.migrations.0002_alter_user_address",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='address',\n            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='user.address', verbose_name='User Address'),\n        ),",
-        "detail": "user.migrations.0002_alter_user_address",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "user.migrations.0003_alter_user_address",
-        "description": "user.migrations.0003_alter_user_address",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0002_alter_user_address'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='address',\n            field=models.ForeignKey(blank=True, default=0, null=True, on_delete=django.db.models.deletion.SET_NULL, to='user.address', verbose_name='User Address'),\n        ),",
-        "detail": "user.migrations.0003_alter_user_address",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "user.migrations.0004_alter_user_address",
-        "description": "user.migrations.0004_alter_user_address",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0003_alter_user_address'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='address',\n            field=models.ForeignKey(blank=True, default=0, null=True, on_delete=django.db.models.deletion.CASCADE, to='user.address', verbose_name='User Address'),\n        ),",
-        "detail": "user.migrations.0004_alter_user_address",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "user.migrations.0005_alter_user_address",
-        "description": "user.migrations.0005_alter_user_address",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0004_alter_user_address'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='address',\n            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.CASCADE, to='user.address', verbose_name='User Address'),\n        ),",
-        "detail": "user.migrations.0005_alter_user_address",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "user.migrations.0006_alter_user_address",
-        "description": "user.migrations.0006_alter_user_address",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0005_alter_user_address'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='address',\n            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.SET_NULL, to='user.address', verbose_name='User Address'),\n        ),",
-        "detail": "user.migrations.0006_alter_user_address",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "user.migrations.0007_alter_user_address",
-        "description": "user.migrations.0007_alter_user_address",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0006_alter_user_address'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='address',\n            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.CASCADE, to='user.address', verbose_name='User Address'),\n        ),",
-        "detail": "user.migrations.0007_alter_user_address",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "user.migrations.0008_alter_user_address",
-        "description": "user.migrations.0008_alter_user_address",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0007_alter_user_address'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='address',\n            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.SET_NULL, to='user.address', verbose_name='User Address'),\n        ),",
-        "detail": "user.migrations.0008_alter_user_address",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "user.migrations.0009_alter_user_address",
-        "description": "user.migrations.0009_alter_user_address",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('user', '0008_alter_user_address'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='user',\n            name='address',\n            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='user.address', verbose_name='User Address'),\n        ),",
-        "detail": "user.migrations.0009_alter_user_address",
         "documentation": {}
     },
     {
@@ -2326,6 +1848,15 @@
         "description": "user.views",
         "peekOfCode": "def get_tokens_for_user(user):\n    refresh = RefreshToken.for_user(user)\n    return {\n        'refresh': str(refresh),\n        'access': str(refresh.access_token),\n    }\nclass UserCreateView(CreateAPIView):\n    queryset = User.objects.all()\n    serializer_class = UserSerializer\n    def post(self, request, *args, **kwargs):",
         "detail": "user.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "wishlist.migrations.0001_initial",
+        "description": "wishlist.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Wishlist',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "wishlist.migrations.0001_initial",
         "documentation": {}
     },
     {

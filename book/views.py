@@ -1,4 +1,4 @@
-from django.shortcuts import render
+import django.shortcuts
 from rest_framework.generics import (
     ListAPIView,
     CreateAPIView,
@@ -7,10 +7,13 @@ from rest_framework.generics import (
     DestroyAPIView,
 )
 from .models import Author, Book, Category, SubCategory
-from .serializers import AuthorSerializer, BookSerializer, CategorySerializer, SubCategorySerializer
+from .serializers import (AuthorSerializer, BookSerializer, BookSlugSerializer, CategorySerializer,
+    SubCategorySerializer)
 from rest_framework.response import Response
 from rest_framework import status
 from django.db.models import Q
+from django.http import Http404
+from django.shortcuts import get_object_or_404
 
 # Create your views here.
 # Category
@@ -122,23 +125,109 @@ class BookRetrieveView(RetrieveAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     lookup_field = 'pk'
-    # # query params
-    # def get_object(self):
-    #     queryset = self.get_queryset()
 
-    #     # Try to retrieve by slug first
-    #     slug = self.kwargs.get('slug')
-    #     if slug is not None:
-    #         # return queryset.filter(slug=slug).first()
-    #         if slug == int(slug):
-    #             return queryset.filter(Q(pk__icontains=slug))
-    #         return queryset.filter(Q(slug__icontains=slug))
+class BookRetrieveSlugView(RetrieveAPIView):
+    queryset = Book.objects.all()
+    serializer_class = BookSlugSerializer
+    lookup_field = 'slug'
+
+    def get_object(self):
+        queryset = self.get_queryset()
         
-    #     # obj = queryset.first()
-    #     # if obj is None:
-    #     #     raise status.HTTP_404_NOT_FOUND
-    #     # return obj
-    #     # Fallback to the default b33
+        # Try to get the slug from path
+        slug_path = self.kwargs.get('slug') # if path('<slug:slug>,...') # kwargs.get('slug) eg: http://127.0.0.1:8000/books/fantastic-four1/
+        if slug_path:
+            try:
+                return queryset.get(slug=slug_path)
+            except Book.DoesNotExist:
+                pass
+            
+        # Try to get the slug from query params  
+        slug_query = self.request.query_params.get('slug') # if path('',...) # query_params.get('slug) eg: http://127.0.0.1:8000/books/?slug=fantastic-four1
+        if slug_query:
+            try:
+                return queryset.get(slug=slug_query)
+            except Book.DoesNotExist:
+                pass
+            
+        raise get_object_or_404("Slug parameter not provided or book not found")
+
+class BookSimilarRetrieveSlugView(RetrieveAPIView):
+    queryset = Book.objects.all()
+    serializer_class = BookSlugSerializer
+    lookup_field = 'slug'
+
+    # # show first
+    # def get_object(self):
+    #         queryset = self.get_queryset()
+    #         similar_books = queryset.none()
+
+    #         # Try to get the slug from path
+    #         slug_path = self.kwargs.get('slug')
+    #         if slug_path:
+    #             print('path')
+    #             similar_books |= queryset.filter(Q(title__icontains=slug_path) | Q(slug__icontains=slug_path))
+
+    #         # Try to get the slug from query params
+    #         slug_query = self.request.query_params.get('slug')
+    #         if slug_query:
+    #             print('params')
+    #             similar_books |= queryset.filter(Q(title__icontains=slug_query) | Q(slug__icontains=slug_query))
+
+    #         if not similar_books.exists():
+    #             print('not found')
+    #             raise Http404("No similar books found")
+
+    #         return similar_books
+    
+    # show all
+    def get_object(self):
+        queryset = self.get_queryset()
+        similar_books = queryset.none()
+
+        # Try to get the slug from path
+        slug_path = self.kwargs.get('slug')
+        if slug_path:
+            similar_books |= queryset.filter(Q(title__icontains=slug_path) | Q(slug__icontains=slug_path))
+
+        # Try to get the slug from query params
+        slug_query = self.request.query_params.get('slug')
+        if slug_query:
+            similar_books |= queryset.filter(Q(title__icontains=slug_query) | Q(slug__icontains=slug_query))
+
+        if not similar_books.exists():
+            raise Http404("No similar books found")
+
+        # # Serialize the queryset
+        # serializer = self.get_serializer(similar_books, many=True)
+        
+        # return serializer.data
+        return similar_books
+        # return similar_books.first()
+        
+# class BookRetrieveSlugView(RetrieveAPIView):
+#     queryset = Book.objects.all()
+#     serializer_class = BookSlugSerializer
+#     lookup_field = 'slug'
+    
+#     # query params
+#     def get_object(self):
+#         queryset = self.get_queryset()
+
+#         # Try to retrieve by slug first
+#         slug = self.kwargs.get('slug')
+#         if slug is not None:
+#             return get_object_or_404(queryset, slug=slug)
+#             # return queryset.filter(slug=slug).first()
+#             # if slug == int(slug):
+#             #     return queryset.filter(Q(pk__icontains=slug))
+#             # return queryset.filter(Q(slug__icontains=slug))
+        
+#         # obj = queryset.first()
+#         # if obj is None:
+#         #     raise status.HTTP_404_NOT_FOUND
+#         # return obj
+#         # Fallback to the default b33
     
 class BookUpdateView(UpdateAPIView):
     queryset = Book.objects.all()
