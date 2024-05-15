@@ -96,7 +96,7 @@ class UserOrderItemListView(ListAPIView):
         return Order.objects.filter(userId=userId)
 
 class OrderItemWriteView(CreateAPIView):
-    queryset = Order.objects.all() # unauthenticated issue message in from fixed
+    queryset = Order.objects.all() # unauthenticated issue message in form fixed
     serializer_class = OrderItemCartCreateSerializer
     lookup_field = 'userId'
     

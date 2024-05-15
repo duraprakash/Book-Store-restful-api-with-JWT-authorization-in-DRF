@@ -8,14 +8,23 @@ from book.models import Book
 from user.models import User
 from .models import Order, OrderItem
 from django.contrib.auth.models import AnonymousUser
+from rest_framework.exceptions import ValidationError
 
 """ Normal order and order item """
 class OrderItemSerializer(serializers.ModelSerializer):
     # bookId = BookSerializer() # show book info in order
+    price = serializers.SerializerMethodField()
+    cost = serializers.SerializerMethodField()
     class Meta:
         model = OrderItem
-        fields = '__all__'
-        # fields = ['bookId', 'order_quantity'] # this
+        # fields = '__all__'
+        fields = ['orderId', 'bookId', 'order_quantity', 'price', 'cost']
+        
+    def get_price(self, obj):
+        return obj.bookId.price
+
+    def get_cost(self, obj):
+        return obj.cost
 
 class OrderSerializer(serializers.ModelSerializer):
     # books = serializers.SerializerMethodField()
@@ -53,50 +62,32 @@ class OrderItemCartCreateSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         # # how to get user input data in serializers
         # userId = self.validated_data['userId']
-        # bookId = self.validated_data['bookId']
-        # order_quantity = self.validated_data['order_quantity']        
+        book_id = self.validated_data['bookId'].id # foreign key id
+        order_quantity = self.validated_data['order_quantity']        
         
         user = self.context['request'].user # Get the current authenticated user
         
-        # Check if the user is authenticated
         if isinstance(user, AnonymousUser):
             raise serializers.ValidationError("User must be authenticated to create an order")
 
-        # Check if an order exists for the user, if not, create one
         order, created = Order.objects.get_or_create(userId=user)
+        
+        # Check if the book item already exist in the user's order
+        order_item = OrderItem.objects.filter(orderId=order, bookId=book_id).first()
+        
+        book = Book.objects.get(id=book_id)
+        if order_quantity > book.stock_quantity:
+            raise ValidationError(f"Only {book.stock_quantity} items are available in stock for {book.title}")
 
-        # Create a new OrderItem using the obtained or created order
-        order_item = OrderItem.objects.create(orderId=order, **validated_data)
+        if order_item:
+            order_item.order_quantity = validated_data['order_quantity']
+            order_item.save()
+        else:
+            # If the book is not in the order, create a new OrderItem using the obtained or created order
+            order_item = OrderItem.objects.create(orderId=order, **validated_data)
+        
+        # Update the stock quantity of the book
+        book.stock_quantity -= order_quantity
+        book.save()
         
         return order_item
-     
-# # class OrderItemCreateSerializer(serializers.ModelSerializer):
-# #     # userId = serializers.IntegerField()
-# #     class Meta:
-# #         model = OrderItem
-# #         # fields = ['orderId', 'bookId', 'order_quantity', 'userId'] # this   
-# #         fields = ['orderId', 'bookId', 'order_quantity'] # this   
-    
-# class OrderCreateSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Order
-#         fields = '__all__'
-#         # fields = ['userId', 'order_status']
-        
-#     def create(self, validated_data):
-#         order = Order.objects.create(**validated_data)
-#         return order
-
-# class OrderItemWriteSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = OrderItem
-#         fields = ['id', 'orderId', 'bookId', 'order_quantity']
-        
-# class OrderWriteSerializer(serializers.ModelSerializer):
-#     items = OrderItemWriteSerializer(many=True, read_only=True)
-#     class Meta:
-#         model = Order
-#         fields = ['id', 'userId', 'order_status', 'total_amount', 'items']
-#         read_only_fields = ['id', 'total_amount']
-        
-        

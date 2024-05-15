@@ -2,6 +2,7 @@ from django.db import models
 from user.models import User
 from django.utils.translation import gettext_lazy as _
 from book.models import Book
+from django.utils.functional import cached_property
 
 # Create your models here.
 class Order(models.Model):
@@ -33,11 +34,6 @@ class OrderItem(models.Model):
     def __str__(self):
         return f'Book- {self.bookId}'
     
+    @cached_property
     def cost(self):
-        return round(self.order_quantity * self.bookId.price, 2) # TODO: 
-    
-
-
-
-
-    
+        return round(float(self.order_quantity) * self.bookId.price, 2)

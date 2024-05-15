@@ -707,6 +707,14 @@
         "documentation": {}
     },
     {
+        "label": "cached_property",
+        "importPath": "django.utils.functional",
+        "description": "django.utils.functional",
+        "isExtraImport": true,
+        "detail": "django.utils.functional",
+        "documentation": {}
+    },
+    {
         "label": "UserSerializer",
         "importPath": "user.serializers",
         "description": "user.serializers",
@@ -753,6 +761,14 @@
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
         "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "rest_framework.exceptions",
+        "description": "rest_framework.exceptions",
+        "isExtraImport": true,
+        "detail": "rest_framework.exceptions",
         "documentation": {}
     },
     {
@@ -1519,7 +1535,7 @@
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderItemSerializer(serializers.ModelSerializer):\n    # bookId = BookSerializer() # show book info in order\n    class Meta:\n        model = OrderItem\n        fields = '__all__'\n        # fields = ['bookId', 'order_quantity'] # this\nclass OrderSerializer(serializers.ModelSerializer):\n    # books = serializers.SerializerMethodField()\n    class Meta:\n        model = Order",
+        "peekOfCode": "class OrderItemSerializer(serializers.ModelSerializer):\n    # bookId = BookSerializer() # show book info in order\n    price = serializers.SerializerMethodField()\n    cost = serializers.SerializerMethodField()\n    class Meta:\n        model = OrderItem\n        # fields = '__all__'\n        fields = ['orderId', 'bookId', 'order_quantity', 'price', 'cost']\n    def get_price(self, obj):\n        return obj.bookId.price",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1546,7 +1562,7 @@
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderItemCartCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['bookId', 'order_quantity']\n    def create(self, validated_data):\n        # # how to get user input data in serializers\n        # userId = self.validated_data['userId']\n        # bookId = self.validated_data['bookId']\n        # order_quantity = self.validated_data['order_quantity']        \n        user = self.context['request'].user # Get the current authenticated user",
+        "peekOfCode": "class OrderItemCartCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['bookId', 'order_quantity']\n    def create(self, validated_data):\n        # # how to get user input data in serializers\n        # userId = self.validated_data['userId']\n        book_id = self.validated_data['bookId'].id # foreign key id\n        order_quantity = self.validated_data['order_quantity']        \n        user = self.context['request'].user # Get the current authenticated user",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1654,7 +1670,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class UserOrderItemListView(ListAPIView):\n    # queryset = Order.objects.all()\n    serializer_class = UserOrderItemSerializer\n    lookup_field = 'userId'\n    def get_queryset(self):\n        userId = self.kwargs.get('pk')\n        return Order.objects.filter(userId=userId)\nclass OrderItemWriteView(CreateAPIView):\n    queryset = Order.objects.all() # unauthenticated issue message in from fixed\n    serializer_class = OrderItemCartCreateSerializer",
+        "peekOfCode": "class UserOrderItemListView(ListAPIView):\n    # queryset = Order.objects.all()\n    serializer_class = UserOrderItemSerializer\n    lookup_field = 'userId'\n    def get_queryset(self):\n        userId = self.kwargs.get('pk')\n        return Order.objects.filter(userId=userId)\nclass OrderItemWriteView(CreateAPIView):\n    queryset = Order.objects.all() # unauthenticated issue message in form fixed\n    serializer_class = OrderItemCartCreateSerializer",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1663,7 +1679,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderItemWriteView(CreateAPIView):\n    queryset = Order.objects.all() # unauthenticated issue message in from fixed\n    serializer_class = OrderItemCartCreateSerializer\n    lookup_field = 'userId'\n    # def get(self, request, *args, **kwargs):\n    #     # # how to get user input data in views\n    #     # userId = self.request.data['userId']\n    #     # bookId = self.kwargs.get('bookId')\n    #     # order_quantity = self.kwargs.get('order_quantity')\n# ### create order for user then add orderitems",
+        "peekOfCode": "class OrderItemWriteView(CreateAPIView):\n    queryset = Order.objects.all() # unauthenticated issue message in form fixed\n    serializer_class = OrderItemCartCreateSerializer\n    lookup_field = 'userId'\n    # def get(self, request, *args, **kwargs):\n    #     # # how to get user input data in views\n    #     # userId = self.request.data['userId']\n    #     # bookId = self.kwargs.get('bookId')\n    #     # order_quantity = self.kwargs.get('order_quantity')\n# ### create order for user then add orderitems",
         "detail": "orders.views",
         "documentation": {}
     },
