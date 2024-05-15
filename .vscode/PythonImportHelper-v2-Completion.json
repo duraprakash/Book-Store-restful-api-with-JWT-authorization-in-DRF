@@ -321,6 +321,14 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -554,6 +562,14 @@
         "documentation": {}
     },
     {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "Q",
         "importPath": "django.db.models",
         "description": "django.db.models",
@@ -707,6 +723,39 @@
         "documentation": {}
     },
     {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "IsAuthenticated",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
@@ -739,11 +788,11 @@
         "documentation": {}
     },
     {
-        "label": "JWTAuthentication",
-        "importPath": "rest_framework_simplejwt.authentication",
-        "description": "rest_framework_simplejwt.authentication",
+        "label": "REST_FRAMEWORK",
+        "importPath": "config.settings",
+        "description": "config.settings",
         "isExtraImport": true,
-        "detail": "rest_framework_simplejwt.authentication",
+        "detail": "config.settings",
         "documentation": {}
     },
     {
@@ -755,28 +804,11 @@
         "documentation": {}
     },
     {
-        "label": "django.contrib.auth.models",
-        "kind": 6,
+        "label": "JWTAuthentication",
+        "importPath": "rest_framework_simplejwt.authentication",
+        "description": "rest_framework_simplejwt.authentication",
         "isExtraImport": true,
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "Group",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
+        "detail": "rest_framework_simplejwt.authentication",
         "documentation": {}
     },
     {
@@ -1487,7 +1519,7 @@
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderItemSerializer(serializers.ModelSerializer):\n    # bookId = BookSerializer() # show book info in order\n    class Meta:\n        model = OrderItem\n        fields = '__all__'\n        # fields = ['bookId', 'order_quantity'] # this\nclass OrderSerializer(serializers.ModelSerializer):\n    # books = serializers.SerializerMethodField() # this\n    class Meta:\n        model = Order",
+        "peekOfCode": "class OrderItemSerializer(serializers.ModelSerializer):\n    # bookId = BookSerializer() # show book info in order\n    class Meta:\n        model = OrderItem\n        fields = '__all__'\n        # fields = ['bookId', 'order_quantity'] # this\nclass OrderSerializer(serializers.ModelSerializer):\n    # books = serializers.SerializerMethodField()\n    class Meta:\n        model = Order",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1496,43 +1528,25 @@
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    # books = serializers.SerializerMethodField() # this\n    class Meta:\n        model = Order\n        fields = '__all__'\n        # fields = ['id', 'userId', 'created_at', 'updated_at', 'order_status', 'books'] # this\n        # fields = ['id', 'userId', 'created_at', 'updated_at', 'order_status'] # this\n\"\"\" Normal order and order item \"\"\"\n    # def get_books(self, obj): # this\n    #     books = OrderItem.objects.filter(orderId=obj)",
+        "peekOfCode": "class OrderSerializer(serializers.ModelSerializer):\n    # books = serializers.SerializerMethodField()\n    class Meta:\n        model = Order\n        fields = '__all__'\n        # fields = ['id', 'userId', 'created_at', 'updated_at', 'order_status', 'books']\n    # def get_books(self, obj):\n    #     books = OrderItem.objects.filter(orderId=obj)\n    #     serializer = OrderItemSerializer(instance=books, many=True)\n    #     return serializer.data   ",
         "detail": "orders.serializers",
         "documentation": {}
     },
     {
-        "label": "OrderItemCreateSerializer",
+        "label": "UserOrderItemSerializer",
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderItemCreateSerializer(serializers.ModelSerializer):\n    # userId = serializers.IntegerField()\n    class Meta:\n        model = OrderItem\n        # fields = ['orderId', 'bookId', 'order_quantity', 'userId'] # this   \n        fields = ['orderId', 'bookId', 'order_quantity'] # this   \nclass OrderCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = '__all__'",
+        "peekOfCode": "class UserOrderItemSerializer(serializers.ModelSerializer):\n    books = serializers.SerializerMethodField() # this\n    class Meta:\n        model = Order\n        # fields = '__all__'\n        # fields = ['id', 'userId', 'order_status'] # limited fields shown\n        fields = ['id', 'userId', 'created_at', 'updated_at', 'order_status', 'books'] # this\n    def get_books(self, obj): # this\n        books = OrderItem.objects.filter(orderId=obj)\n        serializer = OrderItemSerializer(instance=books, many=True)",
         "detail": "orders.serializers",
         "documentation": {}
     },
     {
-        "label": "OrderCreateSerializer",
+        "label": "OrderItemCartCreateSerializer",
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Order\n        fields = '__all__'\n        # fields = ['userId', 'order_status']\n    def create(self, validated_data):\n        order = Order.objects.create(**validated_data)\n        return order\nclass OrderItemWriteSerializer(serializers.ModelSerializer):\n    class Meta:",
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "OrderItemWriteSerializer",
-        "kind": 6,
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "peekOfCode": "class OrderItemWriteSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['id', 'orderId', 'bookId', 'order_quantity']\nclass OrderWriteSerializer(serializers.ModelSerializer):\n    items = OrderItemWriteSerializer(many=True, read_only=True)\n    class Meta:\n        model = Order\n        fields = ['id', 'userId', 'order_status', 'total_amount', 'items']\n        read_only_fields = ['id', 'total_amount']",
-        "detail": "orders.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "OrderWriteSerializer",
-        "kind": 6,
-        "importPath": "orders.serializers",
-        "description": "orders.serializers",
-        "peekOfCode": "class OrderWriteSerializer(serializers.ModelSerializer):\n    items = OrderItemWriteSerializer(many=True, read_only=True)\n    class Meta:\n        model = Order\n        fields = ['id', 'userId', 'order_status', 'total_amount', 'items']\n        read_only_fields = ['id', 'total_amount']",
+        "peekOfCode": "class OrderItemCartCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['bookId', 'order_quantity']\n    def create(self, validated_data):\n        # # how to get user input data in serializers\n        # userId = self.validated_data['userId']\n        # bookId = self.validated_data['bookId']\n        # order_quantity = self.validated_data['order_quantity']        \n        user = self.context['request'].user # Get the current authenticated user",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1550,7 +1564,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    authentication_classes = [JWTAuthentication]\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderCreateView(CreateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderRetrieveView(RetrieveAPIView):\n    queryset = Order.objects.all()",
+        "peekOfCode": "class OrderListView(ListAPIView):\n    # permission_classes = [IsAuthenticated]\n    # authentication_classes = [JWTAuthentication]\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderCreateView(CreateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\nclass OrderRetrieveView(RetrieveAPIView):\n    queryset = Order.objects.all()",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1586,16 +1600,7 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderDeleteView(DestroyAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        print(instance)\n        self.perform_destroy(instance)\n        return Response({'message':'Order deleted successfully'})\nclass UserOrderItemListView(ListAPIView):\n    serializer_class = OrderSerializer",
-        "detail": "orders.views",
-        "documentation": {}
-    },
-    {
-        "label": "UserOrderItemListView",
-        "kind": 6,
-        "importPath": "orders.views",
-        "description": "orders.views",
-        "peekOfCode": "class UserOrderItemListView(ListAPIView):\n    serializer_class = OrderSerializer\n    # lookup_field = 'userId'\n    def get_queryset(self):\n        userId = self.kwargs.get('pk')\n        return Order.objects.filter(userId=userId)\n# order item\nclass OrderItemListView(ListAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer",
+        "peekOfCode": "class OrderDeleteView(DestroyAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        print(instance)\n        self.perform_destroy(instance)\n        return Response({'message':'Order deleted successfully'})\n# order item\nclass OrderItemListView(ListAPIView):",
         "detail": "orders.views",
         "documentation": {}
     },
@@ -1640,16 +1645,25 @@
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderItemDeleteView(DestroyAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        print(instance)\n        self.perform_destroy(instance)\n        return Response({'message':'Order item deleted successfully'})\n### create order for user then add orderitems\nclass OrderWriteView(CreateAPIView):",
+        "peekOfCode": "class OrderItemDeleteView(DestroyAPIView):\n    queryset = OrderItem.objects.all()\n    serializer_class = OrderItemSerializer\n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        print(instance)\n        self.perform_destroy(instance)\n        return Response({'message':'Order item deleted successfully'})\n\"\"\" Normal order and order item \"\"\"\nclass UserOrderItemListView(ListAPIView):",
         "detail": "orders.views",
         "documentation": {}
     },
     {
-        "label": "OrderWriteView",
+        "label": "UserOrderItemListView",
         "kind": 6,
         "importPath": "orders.views",
         "description": "orders.views",
-        "peekOfCode": "class OrderWriteView(CreateAPIView):\n    queryset = Order.objects.all()\n    serializer_class = OrderWriteSerializer\n    def create(self, request, *args, **kwargs):\n        def calculate_total_amount(items):\n            # Logic to calculate total amount based on items\n            total_amount = 0\n            for item_data in items:\n                book = item_data['bookId']\n                total_amount += item_data['order_quantity'] * book.price",
+        "peekOfCode": "class UserOrderItemListView(ListAPIView):\n    # queryset = Order.objects.all()\n    serializer_class = UserOrderItemSerializer\n    lookup_field = 'userId'\n    def get_queryset(self):\n        userId = self.kwargs.get('pk')\n        return Order.objects.filter(userId=userId)\nclass OrderItemWriteView(CreateAPIView):\n    queryset = Order.objects.all() # unauthenticated issue message in from fixed\n    serializer_class = OrderItemCartCreateSerializer",
+        "detail": "orders.views",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemWriteView",
+        "kind": 6,
+        "importPath": "orders.views",
+        "description": "orders.views",
+        "peekOfCode": "class OrderItemWriteView(CreateAPIView):\n    queryset = Order.objects.all() # unauthenticated issue message in from fixed\n    serializer_class = OrderItemCartCreateSerializer\n    lookup_field = 'userId'\n    # def get(self, request, *args, **kwargs):\n    #     # # how to get user input data in views\n    #     # userId = self.request.data['userId']\n    #     # bookId = self.kwargs.get('bookId')\n    #     # order_quantity = self.kwargs.get('order_quantity')\n# ### create order for user then add orderitems",
         "detail": "orders.views",
         "documentation": {}
     },

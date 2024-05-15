@@ -4,14 +4,10 @@ from rest_framework.response import Response
 from rest_framework import status
 from book.models import Book
 from test import user
+from config.settings import REST_FRAMEWORK
 from .models import Order, OrderItem
-from .serializers import (
-    OrderCreateSerializer, 
-    OrderItemCreateSerializer, 
-    OrderItemSerializer,
-    OrderSerializer, 
-    OrderWriteSerializer
-    )
+from .serializers import (OrderItemCartCreateSerializer, OrderItemSerializer, OrderSerializer,
+    UserOrderItemSerializer)
 from rest_framework.generics import(
     ListAPIView,
     CreateAPIView,
@@ -26,9 +22,10 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 from django.shortcuts import get_object_or_404  # Import get_object_or_404
 
 # Create your views here.
+""" Normal order and order item """
 class OrderListView(ListAPIView):
-    permission_classes = [IsAuthenticated]
-    authentication_classes = [JWTAuthentication]
+    # permission_classes = [IsAuthenticated]
+    # authentication_classes = [JWTAuthentication]
     
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
@@ -54,14 +51,6 @@ class OrderDeleteView(DestroyAPIView):
         print(instance)
         self.perform_destroy(instance)
         return Response({'message':'Order deleted successfully'})
-    
-class UserOrderItemListView(ListAPIView):
-    serializer_class = OrderSerializer
-    # lookup_field = 'userId'
-    
-    def get_queryset(self):
-        userId = self.kwargs.get('pk')
-        return Order.objects.filter(userId=userId)
 
 # order item
 class OrderItemListView(ListAPIView):
@@ -94,36 +83,60 @@ class OrderItemDeleteView(DestroyAPIView):
         self.perform_destroy(instance)
         return Response({'message':'Order item deleted successfully'})
     
-### create order for user then add orderitems
-class OrderWriteView(CreateAPIView):
-    queryset = Order.objects.all()
-    serializer_class = OrderWriteSerializer
+""" Normal order and order item """
     
-    def create(self, request, *args, **kwargs):
-        def calculate_total_amount(items):
-            # Logic to calculate total amount based on items
-            total_amount = 0
-            for item_data in items:
-                book = item_data['bookId']
-                total_amount += item_data['order_quantity'] * book.price
-            return total_amount
-        
-        order_data = {
-            'userId': request.user.id,
-            'total_amount': calculate_total_amount(request.data['items'])
-        }
-        
-        order_serializer = self.get_serializer(data=order_data)
-        order_serializer.is_valid(raise_exception=True)
-        order = order_serializer.save()
-        
-        for item_data in request.data['items']:
-            item_data['orderId'] = order.id
-            item_serializer = OrderItemSerializer(data=item_data)
-            item_serializer.is_valid(raise_exception=True)
-            item_serializer.save()
+    
+class UserOrderItemListView(ListAPIView):
+    # queryset = Order.objects.all()
+    serializer_class = UserOrderItemSerializer
+    lookup_field = 'userId'
+    
+    def get_queryset(self):
+        userId = self.kwargs.get('pk')
+        return Order.objects.filter(userId=userId)
 
-        headers = self.get_success_headers(order_serializer.data)
-        return Response(order_serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+class OrderItemWriteView(CreateAPIView):
+    queryset = Order.objects.all() # unauthenticated issue message in from fixed
+    serializer_class = OrderItemCartCreateSerializer
+    lookup_field = 'userId'
+    
+    # def get(self, request, *args, **kwargs):
+    #     # # how to get user input data in views
+    #     # userId = self.request.data['userId']
+    #     # bookId = self.kwargs.get('bookId')
+    #     # order_quantity = self.kwargs.get('order_quantity')
+        
+    
+# ### create order for user then add orderitems
+# class OrderWriteView(CreateAPIView):
+#     queryset = Order.objects.all()
+#     serializer_class = OrderWriteSerializer
+    
+#     def create(self, request, *args, **kwargs):
+#         def calculate_total_amount(items):
+#             # Logic to calculate total amount based on items
+#             total_amount = 0
+#             for item_data in items:
+#                 book = item_data['bookId']
+#                 total_amount += item_data['order_quantity'] * book.price
+#             return total_amount
+        
+#         order_data = {
+#             'userId': request.user.id,
+#             'total_amount': calculate_total_amount(request.data['items'])
+#         }
+        
+#         order_serializer = self.get_serializer(data=order_data)
+#         order_serializer.is_valid(raise_exception=True)
+#         order = order_serializer.save()
+        
+#         for item_data in request.data['items']:
+#             item_data['orderId'] = order.id
+#             item_serializer = OrderItemSerializer(data=item_data)
+#             item_serializer.is_valid(raise_exception=True)
+#             item_serializer.save()
+
+#         headers = self.get_success_headers(order_serializer.data)
+#         return Response(order_serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
 

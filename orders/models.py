@@ -17,7 +17,7 @@ class Order(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     
     def __str__(self):
-        return f'Book ordered by- {self.userId}'
+        return f'Book ordered {self.pk} by- {self.userId} {self.userId.id}'
     
     
 class OrderItem(models.Model):
