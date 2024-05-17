@@ -54,7 +54,7 @@ class UserOrderItemSerializer(serializers.ModelSerializer):
         serializer = OrderItemSerializer(instance=books, many=True)
         return serializer.data     
 
-class OrderItemCartCreateSerializer(serializers.ModelSerializer):
+class  OrderItemCartCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderItem
         fields = ['bookId', 'order_quantity']

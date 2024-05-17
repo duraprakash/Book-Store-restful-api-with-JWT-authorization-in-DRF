@@ -32,6 +32,110 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -177,6 +281,30 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -246,6 +374,22 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "user.models",
+        "description": "user.models",
+        "isExtraImport": true,
+        "detail": "user.models",
         "documentation": {}
     },
     {
@@ -321,6 +465,46 @@
         "documentation": {}
     },
     {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -374,6 +558,22 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -570,6 +770,22 @@
         "documentation": {}
     },
     {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "Q",
         "importPath": "django.db.models",
         "description": "django.db.models",
@@ -583,6 +799,255 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "book.models",
+        "description": "book.models",
+        "isExtraImport": true,
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "book.models",
+        "description": "book.models",
+        "isExtraImport": true,
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "book.models",
+        "description": "book.models",
+        "isExtraImport": true,
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "book.models",
+        "description": "book.models",
+        "isExtraImport": true,
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "book.models",
+        "description": "book.models",
+        "isExtraImport": true,
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
+        "label": "cached_property",
+        "importPath": "django.utils.functional",
+        "description": "django.utils.functional",
+        "isExtraImport": true,
+        "detail": "django.utils.functional",
+        "documentation": {}
+    },
+    {
+        "label": "cached_property",
+        "importPath": "django.utils.functional",
+        "description": "django.utils.functional",
+        "isExtraImport": true,
+        "detail": "django.utils.functional",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "BookSerializer",
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "isExtraImport": true,
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookSerializer",
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "isExtraImport": true,
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemSerializer",
+        "importPath": "orders.serializers",
+        "description": "orders.serializers",
+        "isExtraImport": true,
+        "detail": "orders.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "importPath": "orders.models",
+        "description": "orders.models",
+        "isExtraImport": true,
+        "detail": "orders.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cart",
+        "importPath": "cart.models",
+        "description": "cart.models",
+        "isExtraImport": true,
+        "detail": "cart.models",
+        "documentation": {}
+    },
+    {
+        "label": "CartItem",
+        "importPath": "cart.models",
+        "description": "cart.models",
+        "isExtraImport": true,
+        "detail": "cart.models",
+        "documentation": {}
+    },
+    {
+        "label": "AddCartToOrderSerializer",
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "isExtraImport": true,
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemCreateSerializer",
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "isExtraImport": true,
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemListSerializer",
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "isExtraImport": true,
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemSerializer",
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "isExtraImport": true,
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartListSerializer",
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "isExtraImport": true,
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartSerializer",
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "isExtraImport": true,
+        "detail": "cart.serializers",
         "documentation": {}
     },
     {
@@ -643,124 +1108,11 @@
         "documentation": {}
     },
     {
-        "label": "Order",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "OrderItem",
-        "importPath": "orders.models",
-        "description": "orders.models",
-        "isExtraImport": true,
-        "detail": "orders.models",
-        "documentation": {}
-    },
-    {
-        "label": "gettext_lazy",
-        "importPath": "django.utils.translation",
-        "description": "django.utils.translation",
-        "isExtraImport": true,
-        "detail": "django.utils.translation",
-        "documentation": {}
-    },
-    {
-        "label": "gettext_lazy",
-        "importPath": "django.utils.translation",
-        "description": "django.utils.translation",
-        "isExtraImport": true,
-        "detail": "django.utils.translation",
-        "documentation": {}
-    },
-    {
-        "label": "gettext_lazy",
-        "importPath": "django.utils.translation",
-        "description": "django.utils.translation",
-        "isExtraImport": true,
-        "detail": "django.utils.translation",
-        "documentation": {}
-    },
-    {
-        "label": "Book",
-        "importPath": "book.models",
-        "description": "book.models",
-        "isExtraImport": true,
-        "detail": "book.models",
-        "documentation": {}
-    },
-    {
-        "label": "Book",
-        "importPath": "book.models",
-        "description": "book.models",
-        "isExtraImport": true,
-        "detail": "book.models",
-        "documentation": {}
-    },
-    {
-        "label": "Book",
-        "importPath": "book.models",
-        "description": "book.models",
-        "isExtraImport": true,
-        "detail": "book.models",
-        "documentation": {}
-    },
-    {
-        "label": "cached_property",
-        "importPath": "django.utils.functional",
-        "description": "django.utils.functional",
-        "isExtraImport": true,
-        "detail": "django.utils.functional",
-        "documentation": {}
-    },
-    {
         "label": "UserSerializer",
         "importPath": "user.serializers",
         "description": "user.serializers",
         "isExtraImport": true,
         "detail": "user.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "BookSerializer",
-        "importPath": "book.serializers",
-        "description": "book.serializers",
-        "isExtraImport": true,
-        "detail": "book.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "django.contrib.auth.models",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AnonymousUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "Group",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -793,14 +1145,6 @@
         "description": "rest_framework.permissions",
         "isExtraImport": true,
         "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "user",
-        "importPath": "test",
-        "description": "test",
-        "isExtraImport": true,
-        "detail": "test",
         "documentation": {}
     },
     {
@@ -937,6 +1281,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "book.migrations.0003_comment",
+        "description": "book.migrations.0003_comment",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0002_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Comment',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "book.migrations.0003_comment",
+        "documentation": {}
+    },
+    {
         "label": "slug",
         "kind": 6,
         "importPath": "book.admin",
@@ -991,6 +1344,15 @@
         "documentation": {}
     },
     {
+        "label": "Comment",
+        "kind": 6,
+        "importPath": "book.models",
+        "description": "book.models",
+        "peekOfCode": "class Comment(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    book = models.ForeignKey(Book, on_delete=models.CASCADE)\n    comment = models.TextField()\n    is_visible = models.BooleanField(default=True)\n    def __str__(self):\n        return f'Comment by {self.user.username}'",
+        "detail": "book.models",
+        "documentation": {}
+    },
+    {
         "label": "CategorySerializer",
         "kind": 6,
         "importPath": "book.serializers",
@@ -1004,7 +1366,7 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())",
+        "peekOfCode": "class SubCategorySerializer(serializers.ModelSerializer):\n    class Meta:\n        model = SubCategory\n        fields = '__all__'\nclass AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass CommentSerializer(serializers.ModelSerializer):  \n    class Meta:",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -1013,7 +1375,16 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass BookSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookSlugSerializer(serializers.ModelSerializer):",
+        "peekOfCode": "class AuthorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Author\n        fields = '__all__'\nclass CommentSerializer(serializers.ModelSerializer):  \n    class Meta:\n        model = Comment\n        fields = '__all__'\n    # def create(self, validated_data):\n    #     validated_data['is_visible'] = True",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CommentSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class CommentSerializer(serializers.ModelSerializer):  \n    class Meta:\n        model = Comment\n        fields = '__all__'\n    # def create(self, validated_data):\n    #     validated_data['is_visible'] = True\n    #     return super().create(validated_data)\nclass BookSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -1022,7 +1393,16 @@
         "kind": 6,
         "importPath": "book.serializers",
         "description": "book.serializers",
-        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookSlugSerializer(serializers.ModelSerializer):\n    authors = AuthorSerializer(many=True)\n    category = CategorySerializer()\n    sub_category = SubCategorySerializer()\n    class Meta:",
+        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    class Meta:\n        model = Book\n        fields = '__all__'\nclass BookCommentSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    comments = serializers.SerializerMethodField()\n    class Meta:\n        model = Book",
+        "detail": "book.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookCommentSerializer",
+        "kind": 6,
+        "importPath": "book.serializers",
+        "description": "book.serializers",
+        "peekOfCode": "class BookCommentSerializer(serializers.ModelSerializer):\n    authors = serializers.PrimaryKeyRelatedField(many=True, queryset=Author.objects.all())\n    comments = serializers.SerializerMethodField()\n    class Meta:\n        model = Book\n        # fields = '__all__'\n        fields = ['id', 'title', 'image', 'isnb', 'category', 'sub_category', 'authors', 'price', 'stock_quantity', 'publication', 'publication_date', 'slug', 'is_available', 'added_by', 'comments', 'created_at', 'updated_at']\n    def get_comments(self, obj):\n        comments = Comment.objects.filter(book=obj, is_visible=False)\n        return CommentSerializer(comments, many=True).data",
         "detail": "book.serializers",
         "documentation": {}
     },
@@ -1184,7 +1564,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookListView(ListAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    # # query params 1.1\n    # # change in BookSerializer -> lookup_field, extra_kwargs\n    # def get_queryset(self):\n    #     queryset = super().get_queryset()\n    #     slug = self.request.query_params.get('slug', None)\n    #     if slug is not None:\n    #         queryset = queryset.filter(Q(slug__icontains=slug)) # SELECT * FROM book WHERE slug LIKE '%ref%';",
+        "peekOfCode": "class BookListView(ListAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookCommentSerializer\n    # # query params 1.1\n    # # change in BookSerializer -> lookup_field, extra_kwargs\n    # def get_queryset(self):\n    #     queryset = super().get_queryset()\n    #     slug = self.request.query_params.get('slug', None)\n    #     if slug is not None:\n    #         queryset = queryset.filter(Q(slug__icontains=slug)) # SELECT * FROM book WHERE slug LIKE '%ref%';",
         "detail": "book.views",
         "documentation": {}
     },
@@ -1193,7 +1573,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer",
+        "peekOfCode": "class BookCreateView(CreateAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\nclass BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookCommentSerializer\n    lookup_field = 'pk'\nclass BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer",
         "detail": "book.views",
         "documentation": {}
     },
@@ -1202,7 +1582,7 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer\n    lookup_field = 'pk'\nclass BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer\n    lookup_field = 'slug'\n    def get_object(self):\n        queryset = self.get_queryset()",
+        "peekOfCode": "class BookRetrieveView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookCommentSerializer\n    lookup_field = 'pk'\nclass BookRetrieveSlugView(RetrieveAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSlugSerializer\n    lookup_field = 'slug'\n    def get_object(self):\n        queryset = self.get_queryset()",
         "detail": "book.views",
         "documentation": {}
     },
@@ -1238,8 +1618,215 @@
         "kind": 6,
         "importPath": "book.views",
         "description": "book.views",
-        "peekOfCode": "class BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer  \n    lookup_field = 'pk'  \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Book deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)",
+        "peekOfCode": "class BookDeleteView(DestroyAPIView):\n    queryset = Book.objects.all()\n    serializer_class = BookSerializer  \n    lookup_field = 'pk'  \n    def destroy(self, request, *args, **kwargs):\n        instance = self.get_object()\n        self.perform_destroy(instance)\n        return Response({\"message\": \"Book deleted successfully\"}, status=status.HTTP_204_NO_CONTENT)\nclass CommentView(ListAPIView):\n    queryset = Comment.objects.all()",
         "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CommentView(ListAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentCreateView(CreateAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentDetailsView(RetrieveAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentUpdateView(UpdateAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentCreateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CommentCreateView(CreateAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentDetailsView(RetrieveAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentUpdateView(UpdateAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentDeleteView(DestroyAPIView):",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentDetailsView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CommentDetailsView(RetrieveAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentUpdateView(UpdateAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentDeleteView(DestroyAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentUpdateView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CommentUpdateView(UpdateAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer\nclass CommentDeleteView(DestroyAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentDeleteView",
+        "kind": 6,
+        "importPath": "book.views",
+        "description": "book.views",
+        "peekOfCode": "class CommentDeleteView(DestroyAPIView):\n    queryset = Comment.objects.all()\n    serializer_class = CommentSerializer",
+        "detail": "book.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cart.migrations.0001_initial",
+        "description": "cart.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('book', '0002_initial'),\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Cart',\n            fields=[",
+        "detail": "cart.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cart.migrations.0002_alter_cart_created_at_alter_cart_updated_at_and_more",
+        "description": "cart.migrations.0002_alter_cart_created_at_alter_cart_updated_at_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('cart', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='cart',\n            name='created_at',\n            field=models.DateTimeField(auto_now_add=True),\n        ),",
+        "detail": "cart.migrations.0002_alter_cart_created_at_alter_cart_updated_at_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cart.migrations.0003_remove_cart_order_status_cartitem_ordered_and_more",
+        "description": "cart.migrations.0003_remove_cart_order_status_cartitem_ordered_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('book', '0002_initial'),\n        ('cart', '0002_alter_cart_created_at_alter_cart_updated_at_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='cart',\n            name='order_status',\n        ),",
+        "detail": "cart.migrations.0003_remove_cart_order_status_cartitem_ordered_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "CartConfig",
+        "kind": 6,
+        "importPath": "cart.apps",
+        "description": "cart.apps",
+        "peekOfCode": "class CartConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'cart'",
+        "detail": "cart.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Cart",
+        "kind": 6,
+        "importPath": "cart.models",
+        "description": "cart.models",
+        "peekOfCode": "class Cart(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return f'Cart for {self.user.username}'\nclass CartItem(models.Model):\n    cart = models.ForeignKey(Cart, verbose_name=_(\"Cart\"), on_delete=models.CASCADE)\n    book = models.ForeignKey(Book, verbose_name=_(\"Books\"), on_delete=models.CASCADE)\n    quantity = models.DecimalField(_(\"Quantity\"), max_digits=5, decimal_places=2)",
+        "detail": "cart.models",
+        "documentation": {}
+    },
+    {
+        "label": "CartItem",
+        "kind": 6,
+        "importPath": "cart.models",
+        "description": "cart.models",
+        "peekOfCode": "class CartItem(models.Model):\n    cart = models.ForeignKey(Cart, verbose_name=_(\"Cart\"), on_delete=models.CASCADE)\n    book = models.ForeignKey(Book, verbose_name=_(\"Books\"), on_delete=models.CASCADE)\n    quantity = models.DecimalField(_(\"Quantity\"), max_digits=5, decimal_places=2)\n    ordered = models.BooleanField(default=False)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    class Meta:\n        unique_together = ('cart', 'book')\n    def __str__(self):",
+        "detail": "cart.models",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class CartItemSerializer(serializers.ModelSerializer):\n    price = serializers.SerializerMethodField()\n    cost = serializers.SerializerMethodField()\n    class Meta:\n        model = CartItem\n        fields = '__all__'\n    def get_price(self, obj):\n        return obj.book.price\n    def get_cost(self, obj):\n        return obj.cost",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class CartSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Cart\n        fields = '__all__'        \n\"\"\" Normal cart and cartitem \"\"\"\nclass CartItemListSerializer(serializers.ModelSerializer):\n    # book = serializers.ReadOnlyField(source='book.title')\n    # book = serializers.StringRelatedField(read_only=True)\n    cost = serializers.FloatField()\n    class Meta:",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemListSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class CartItemListSerializer(serializers.ModelSerializer):\n    # book = serializers.ReadOnlyField(source='book.title')\n    # book = serializers.StringRelatedField(read_only=True)\n    cost = serializers.FloatField()\n    class Meta:\n        model = CartItem\n        fields = '__all__'\n        # fields = ['id', 'book', 'quantity', 'cost']\n        # fields = ['id', 'book', 'quantity', 'cost', 'book_details']\n    # # Additional fields can be added if needed, e.g., book details",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemCreateSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class CartItemCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = CartItem\n        fields = ['book', 'quantity']\n    def create(self, validated_data):\n        user_id = self.context['request'].user\n        book_id = self.validated_data['book'].id\n        cart_quantity = self.validated_data['quantity']\n        if isinstance(user_id, AnonymousUser):\n            raise serializers.ValidationError('User must be authenticated create an cart')",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AddCartToOrderSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class AddCartToOrderSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['bookId', 'order_quantity']\n    def create(self, validated_data):        \n        # get user input data\n        user_id = self.context['request'].user\n        book_id = self.validated_data['bookId'].id\n        order_quantity = self.validated_data['order_quantity']\n        if isinstance(user_id, AnonymousUser):",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CartListSerializer",
+        "kind": 6,
+        "importPath": "cart.serializers",
+        "description": "cart.serializers",
+        "peekOfCode": "class CartListSerializer(serializers.ModelSerializer):\n    book = CartItemSerializer(many=True, read_only=True)\n    class Meta:\n        model = Cart\n        fields = '__all__'",
+        "detail": "cart.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "cart.urls",
+        "description": "cart.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', CartListAPIView.as_view(), name='cart-items-list'),\n    path('create/', CartItemCreateAPIView.as_view(), name='add-to-cart'),\n    path('cart-to-order/', AddCartToOrder.as_view(), name='add-to-cart'),\n    path('<int:pk>/retrieve/', CartDetailAPIView.as_view(), name='cart-item'),\n    path('<int:pk>/delete/', CartItemDeleteAPIView.as_view(), name='delete-cart-item'),\n]",
+        "detail": "cart.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CartListAPIView",
+        "kind": 6,
+        "importPath": "cart.views",
+        "description": "cart.views",
+        "peekOfCode": "class CartListAPIView(generics.ListAPIView):\n    serializer_class = CartItemListSerializer\n    permission_classes = [permissions.IsAuthenticated]\n    def get_queryset(self):\n        user = self.request.user\n        cart = Cart.objects.get(user=user)\n        return CartItem.objects.filter(cart=cart)\nclass CartDetailAPIView(generics.RetrieveAPIView):\n    queryset = Cart.objects.all()\n    serializer_class = CartSerializer",
+        "detail": "cart.views",
+        "documentation": {}
+    },
+    {
+        "label": "CartDetailAPIView",
+        "kind": 6,
+        "importPath": "cart.views",
+        "description": "cart.views",
+        "peekOfCode": "class CartDetailAPIView(generics.RetrieveAPIView):\n    queryset = Cart.objects.all()\n    serializer_class = CartSerializer\n    # permission_classes = [permissions.IsAuthenticated]\n    def get_object(self):\n        return Cart.objects.get(user=self.request.user)\nclass CartItemCreateAPIView(generics.CreateAPIView):\n    # queryset = Cart.objects.all()\n    serializer_class = CartItemCreateSerializer\n    permission_classes = [permissions.IsAuthenticated]",
+        "detail": "cart.views",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemCreateAPIView",
+        "kind": 6,
+        "importPath": "cart.views",
+        "description": "cart.views",
+        "peekOfCode": "class CartItemCreateAPIView(generics.CreateAPIView):\n    # queryset = Cart.objects.all()\n    serializer_class = CartItemCreateSerializer\n    permission_classes = [permissions.IsAuthenticated]\nclass AddCartToOrder(generics.CreateAPIView):\n    serializer_class = AddCartToOrderSerializer\n    permission_classes = [permissions.IsAuthenticated]\nclass CartItemDeleteAPIView(generics.DestroyAPIView):\n    queryset = CartItem.objects.all()\n    serializer_class = CartItemSerializer",
+        "detail": "cart.views",
+        "documentation": {}
+    },
+    {
+        "label": "AddCartToOrder",
+        "kind": 6,
+        "importPath": "cart.views",
+        "description": "cart.views",
+        "peekOfCode": "class AddCartToOrder(generics.CreateAPIView):\n    serializer_class = AddCartToOrderSerializer\n    permission_classes = [permissions.IsAuthenticated]\nclass CartItemDeleteAPIView(generics.DestroyAPIView):\n    queryset = CartItem.objects.all()\n    serializer_class = CartItemSerializer\n    permission_classes = [permissions.IsAuthenticated]\n    def get_queryset(self):\n        return CartItem.objects.filter(cart__user=self.request.user)",
+        "detail": "cart.views",
+        "documentation": {}
+    },
+    {
+        "label": "CartItemDeleteAPIView",
+        "kind": 6,
+        "importPath": "cart.views",
+        "description": "cart.views",
+        "peekOfCode": "class CartItemDeleteAPIView(generics.DestroyAPIView):\n    queryset = CartItem.objects.all()\n    serializer_class = CartItemSerializer\n    permission_classes = [permissions.IsAuthenticated]\n    def get_queryset(self):\n        return CartItem.objects.filter(cart__user=self.request.user)",
+        "detail": "cart.views",
         "documentation": {}
     },
     {
@@ -1472,7 +2059,7 @@
         "kind": 5,
         "importPath": "config.urls",
         "description": "config.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('users/', include('user.urls')),\n    path('books/', include('book.urls')),\n    path('orders/', include('orders.urls')),\n]\n# image access 1.2\nurlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('users/', include('user.urls')),\n    path('books/', include('book.urls')),\n    path('orders/', include('orders.urls')),\n    path('carts/', include('cart.urls')),\n]\n# image access 1.2\nurlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "config.urls",
         "documentation": {}
     },
@@ -1504,6 +2091,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "orders.migrations.0003_order_date_ordered",
+        "description": "orders.migrations.0003_order_date_ordered",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0002_initial'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='order',\n            name='date_ordered',\n            field=models.DateTimeField(default='2022-02-25'),\n        ),",
+        "detail": "orders.migrations.0003_order_date_ordered",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "orders.migrations.0004_alter_order_date_ordered",
+        "description": "orders.migrations.0004_alter_order_date_ordered",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('orders', '0003_order_date_ordered'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='order',\n            name='date_ordered',\n            field=models.DateTimeField(auto_now_add=True),\n        ),",
+        "detail": "orders.migrations.0004_alter_order_date_ordered",
+        "documentation": {}
+    },
+    {
         "label": "OrdersConfig",
         "kind": 6,
         "importPath": "orders.apps",
@@ -1517,7 +2122,7 @@
         "kind": 6,
         "importPath": "orders.models",
         "description": "orders.models",
-        "peekOfCode": "class Order(models.Model):\n    PENDING = \"P\"\n    COMPLETED = \"C\"\n    STATUS_CHOICES = ((PENDING, _(\"pending\")), (COMPLETED, _(\"completed\")))\n    userId = models.ForeignKey(User, verbose_name=_(\"UserId\"), on_delete=models.CASCADE) # this\n    order_status = models.CharField(max_length=1, choices=STATUS_CHOICES, default=PENDING, blank=False, null=False)\n    total_amount = models.FloatField(default=0)\n    created_at = models.DateTimeField(auto_now=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):",
+        "peekOfCode": "class Order(models.Model):\n    PENDING = \"P\"\n    COMPLETED = \"C\"\n    STATUS_CHOICES = ((PENDING, _(\"pending\")), (COMPLETED, _(\"completed\")))\n    userId = models.ForeignKey(User, verbose_name=_(\"UserId\"), on_delete=models.CASCADE)\n    order_status = models.CharField(max_length=1, choices=STATUS_CHOICES, default=PENDING, blank=False, null=False)\n    total_amount = models.FloatField(default=0)\n    date_ordered = models.DateTimeField(auto_now_add=True)\n    created_at = models.DateTimeField(auto_now=True)\n    updated_at = models.DateTimeField(auto_now=True)",
         "detail": "orders.models",
         "documentation": {}
     },
@@ -1526,7 +2131,7 @@
         "kind": 6,
         "importPath": "orders.models",
         "description": "orders.models",
-        "peekOfCode": "class OrderItem(models.Model):\n    orderId = models.ForeignKey(Order, verbose_name=_(\"Order No.\"), on_delete=models.CASCADE)\n    bookId = models.ForeignKey(Book, verbose_name=_(\"Book\"), on_delete=models.CASCADE) # this\n    order_quantity = models.DecimalField(_(\"\"), max_digits=5, decimal_places=2)\n    created_at = models.DateTimeField(auto_now=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    # class Meta:\n    #     unique_together = ('orderId', 'bookId') # this\n    def __str__(self):\n        return f'Book- {self.bookId}'",
+        "peekOfCode": "class OrderItem(models.Model):\n    orderId = models.ForeignKey(Order, verbose_name=_(\"Order No.\"), on_delete=models.CASCADE)\n    bookId = models.ForeignKey(Book, verbose_name=_(\"Book\"), on_delete=models.CASCADE)\n    order_quantity = models.DecimalField(_(\"\"), max_digits=5, decimal_places=2)\n    created_at = models.DateTimeField(auto_now=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    # class Meta:\n    #     unique_together = ('orderId', 'bookId') # this\n    def __str__(self):\n        return f'Book- {self.bookId}'",
         "detail": "orders.models",
         "documentation": {}
     },
@@ -1558,11 +2163,15 @@
         "documentation": {}
     },
     {
-        "label": "OrderItemCartCreateSerializer",
+        "label": {
+            "name": "",
+            "kind": 6,
+            "peekOfCode": "class  OrderItemCartCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['bookId', 'order_quantity']\n    def create(self, validated_data):\n        # # how to get user input data in serializers\n        # userId = self.validated_data['userId']\n        book_id = self.validated_data['bookId'].id # foreign key id\n        order_quantity = self.validated_data['order_quantity']        \n        user = self.context['request'].user # Get the current authenticated user"
+        },
         "kind": 6,
         "importPath": "orders.serializers",
         "description": "orders.serializers",
-        "peekOfCode": "class OrderItemCartCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['bookId', 'order_quantity']\n    def create(self, validated_data):\n        # # how to get user input data in serializers\n        # userId = self.validated_data['userId']\n        book_id = self.validated_data['bookId'].id # foreign key id\n        order_quantity = self.validated_data['order_quantity']        \n        user = self.context['request'].user # Get the current authenticated user",
+        "peekOfCode": "class  OrderItemCartCreateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = OrderItem\n        fields = ['bookId', 'order_quantity']\n    def create(self, validated_data):\n        # # how to get user input data in serializers\n        # userId = self.validated_data['userId']\n        book_id = self.validated_data['bookId'].id # foreign key id\n        order_quantity = self.validated_data['order_quantity']        \n        user = self.context['request'].user # Get the current authenticated user",
         "detail": "orders.serializers",
         "documentation": {}
     },
@@ -1906,42 +2515,6 @@
         "description": "manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "manage",
-        "documentation": {}
-    },
-    {
-        "label": "address",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "address = {'street':'vyas-2', 'city':'damauli'}\nuser = {'username':'uname', 'password':'ppassword', 'address': address}\naddress = user.pop('address',None)\nfor key,value in user.items():\n    print(f'{key}: {value}')\n    # # get the address key and value inside user\n    # if isinstance(value, dict):\n    #     for inner_key, inner_value in value.items():\n    #         print(f'{inner_key}: {inner_value}')\n# # get the address key and value escaping the user",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "user",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "user = {'username':'uname', 'password':'ppassword', 'address': address}\naddress = user.pop('address',None)\nfor key,value in user.items():\n    print(f'{key}: {value}')\n    # # get the address key and value inside user\n    # if isinstance(value, dict):\n    #     for inner_key, inner_value in value.items():\n    #         print(f'{inner_key}: {inner_value}')\n# # get the address key and value escaping the user\n# for key,value in user.items():",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "address",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "address = user.pop('address',None)\nfor key,value in user.items():\n    print(f'{key}: {value}')\n    # # get the address key and value inside user\n    # if isinstance(value, dict):\n    #     for inner_key, inner_value in value.items():\n    #         print(f'{inner_key}: {inner_value}')\n# # get the address key and value escaping the user\n# for key,value in user.items():\n#     if isinstance(value, dict):",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "user['address']",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "user['address'] = address\nprint(\"User:\")\nfor key, value in user.items():\n    if isinstance(value, dict):\n        print(f\"  {key}:\")\n        for inner_key, inner_value in value.items():\n            print(f\"    {inner_key}: {inner_value}\")\n    else:\n        print(f\"  {key}: {value}\")",
-        "detail": "test",
         "documentation": {}
     }
 ]

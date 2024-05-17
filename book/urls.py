@@ -6,8 +6,9 @@ from .views import (# Author
     CategoryListView, # Sub-Category
     SubCategoryListView, AuthorCreateView,
     AuthorDeleteView, AuthorRetrieveView, AuthorUpdateView, BookCreateView, BookDeleteView,
-    BookRetrieveSlugView, BookSimilarRetrieveSlugView, BookRetrieveView, BookUpdateView,
+    BookRetrieveSlugView, BookRetrieveView, BookSimilarRetrieveSlugView, BookUpdateView,
     CategoryCreateView, CategoryDeleteView, CategoryRetrieveView, CategoryUpdateView,
+    CommentCreateView, CommentDeleteView, CommentDetailsView, CommentUpdateView, CommentView,
     SubCategoryCreateView, SubCategoryDeleteView, SubCategoryRetrieveView, SubCategoryUpdateView)
 
 urlpatterns = [
@@ -46,4 +47,10 @@ urlpatterns = [
     
     path('<slug:slug>/slug-kwargs/similar/', BookSimilarRetrieveSlugView.as_view(), name='book_retrieve_slug_similar_path'), # slug from path ie: http://127.0.0.1:8000/books/fantastic-four/slug-kwargs/similar/
     path('slug-params/similar/', BookSimilarRetrieveSlugView.as_view(), name='book_retrieve_slug_similar_params'), # slug from params ie: http://127.0.0.1:8000/books/slug-params/similar/?slug=fantastic-four
+    
+    path('comments/', CommentView.as_view(), name='comment-list'),
+    path('comments/create/', CommentCreateView.as_view(), name='comment-create'),
+    path('comments/<int:pk>/', CommentDetailsView.as_view(), name='comment-retrieve'),
+    path('comments/<int:pk>/update/', CommentUpdateView.as_view(), name='comment-update'),
+    path('comments/<int:pk>/delete/', CommentDeleteView.as_view(), name='comment-delete'),
 ]

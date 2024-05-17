@@ -6,9 +6,9 @@ from rest_framework.generics import (
     UpdateAPIView,
     DestroyAPIView,
 )
-from .models import Author, Book, Category, SubCategory
-from .serializers import (AuthorSerializer, BookSerializer, BookSlugSerializer, CategorySerializer,
-    SubCategorySerializer)
+from .models import Author, Book, Category, SubCategory, Comment
+from .serializers import (AuthorSerializer, BookCommentSerializer, BookSerializer,
+    BookSlugSerializer, CategorySerializer, CommentSerializer, SubCategorySerializer)
 from rest_framework.response import Response
 from rest_framework import status
 from django.db.models import Q
@@ -105,7 +105,7 @@ class AuthorDeleteView(DestroyAPIView):
 # Book
 class BookListView(ListAPIView):
     queryset = Book.objects.all()
-    serializer_class = BookSerializer
+    serializer_class = BookCommentSerializer
     
     # # query params 1.1
     # # change in BookSerializer -> lookup_field, extra_kwargs
@@ -122,7 +122,7 @@ class BookCreateView(CreateAPIView):
     
 class BookRetrieveView(RetrieveAPIView):
     queryset = Book.objects.all()
-    serializer_class = BookSerializer
+    serializer_class = BookCommentSerializer
     lookup_field = 'pk'
 
 class BookRetrieveSlugView(RetrieveAPIView):
@@ -244,3 +244,25 @@ class BookDeleteView(DestroyAPIView):
         instance = self.get_object()
         self.perform_destroy(instance)
         return Response({"message": "Book deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+
+
+class CommentView(ListAPIView):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
+
+class CommentCreateView(CreateAPIView):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
+
+class CommentDetailsView(RetrieveAPIView):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
+
+class CommentUpdateView(UpdateAPIView):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
+
+class CommentDeleteView(DestroyAPIView):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
+    

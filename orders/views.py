@@ -3,7 +3,6 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
 from book.models import Book
-from test import user
 from config.settings import REST_FRAMEWORK
 from .models import Order, OrderItem
 from .serializers import (OrderItemCartCreateSerializer, OrderItemSerializer, OrderSerializer,

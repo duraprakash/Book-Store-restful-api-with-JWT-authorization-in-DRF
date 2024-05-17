@@ -11,9 +11,10 @@ class Order(models.Model):
     
     STATUS_CHOICES = ((PENDING, _("pending")), (COMPLETED, _("completed")))
     
-    userId = models.ForeignKey(User, verbose_name=_("UserId"), on_delete=models.CASCADE) # this
+    userId = models.ForeignKey(User, verbose_name=_("UserId"), on_delete=models.CASCADE)
     order_status = models.CharField(max_length=1, choices=STATUS_CHOICES, default=PENDING, blank=False, null=False)
     total_amount = models.FloatField(default=0)
+    date_ordered = models.DateTimeField(auto_now_add=True)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
     
@@ -23,7 +24,7 @@ class Order(models.Model):
     
 class OrderItem(models.Model):
     orderId = models.ForeignKey(Order, verbose_name=_("Order No."), on_delete=models.CASCADE)
-    bookId = models.ForeignKey(Book, verbose_name=_("Book"), on_delete=models.CASCADE) # this
+    bookId = models.ForeignKey(Book, verbose_name=_("Book"), on_delete=models.CASCADE)
     order_quantity = models.DecimalField(_(""), max_digits=5, decimal_places=2)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)

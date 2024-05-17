@@ -57,3 +57,13 @@ class Book(models.Model):
         
     def __str__(self):
         return f'{self.slug} yup {self.pk}'
+
+
+class Comment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    comment = models.TextField()
+    is_visible = models.BooleanField(default=True)
+    
+    def __str__(self):
+        return f'Comment by {self.user.username}'
